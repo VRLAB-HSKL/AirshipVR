@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: 68be9a3a56e1d9242ae475b17c013644
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Altimeter_beweglich
+    100004: Altimeter_Station
+    100006: Altimeter_Statisch
+    100008: Armaturenbrett
+    100010: Brenner
+    100012: BrennerFundament
+    100014: "BrennerGeh\xE4use"
+    100016: Buttonhalter_AB
+    100018: Buttonhalter_BR
+    100020: Buttonhalter_DOWN
+    100022: Cylinder
+    100024: "F\xFCllstandsanzeigenhalter"
+    100026: Gleiter_Hinten
+    100028: Gleiter_L
+    100030: Gleiter_R
+    100032: Hidavig
+    100034: Knopf_Abstieg
+    100036: Knopf_Aufstieg
+    100038: Knopf_Bremse
+    100040: Kompass
+    100042: Kompassbefestigung
+    100044: Licht
+    100046: Luftklappe
+    100048: Luftklappe_MEC
+    100050: MEC_Altimeter
+    100052: MEC_BTN_BREAK
+    100054: MEC_BTN_DOWN
+    100056: MEC_BTN_UP
+    100058: "MEC_F\xFCllanzeige"
+    100060: MEC_Kompassnadel
+    100062: Metal_Stativ_Luftklappe
+    100064: Plane
+    100066: Steampunk Ofen
+    100068: Steuerrad
+    100070: Steuerrad_CON
+    100072: Steuerrad_Konsole
+    100074: Tankanzeige
+    100076: Treibstoff_Korb
+    100078: "T\xFCr"
+    100080: "T\xFCrknauf"
+    100082: Verbindungsseil_H_L
+    100084: Verbindungsseil_H_R
+    100086: Verbindungsseil_V_L
+    100088: Verbindungsseil_V_R
+    100090: Verbindunsstange
+    100092: Verbindunsstange.001
+    100094: Verbindunsstange.002
+    100096: Verbindunsstange.003
+    100098: Wand
+    100100: Zeiger
+    400000: //RootNode
+    400002: Altimeter_beweglich
+    400004: Altimeter_Station
+    400006: Altimeter_Statisch
+    400008: Armaturenbrett
+    400010: Brenner
+    400012: BrennerFundament
+    400014: "BrennerGeh\xE4use"
+    400016: Buttonhalter_AB
+    400018: Buttonhalter_BR
+    400020: Buttonhalter_DOWN
+    400022: Cylinder
+    400024: "F\xFCllstandsanzeigenhalter"
+    400026: Gleiter_Hinten
+    400028: Gleiter_L
+    400030: Gleiter_R
+    400032: Hidavig
+    400034: Knopf_Abstieg
+    400036: Knopf_Aufstieg
+    400038: Knopf_Bremse
+    400040: Kompass
+    400042: Kompassbefestigung
+    400044: Licht
+    400046: Luftklappe
+    400048: Luftklappe_MEC
+    400050: MEC_Altimeter
+    400052: MEC_BTN_BREAK
+    400054: MEC_BTN_DOWN
+    400056: MEC_BTN_UP
+    400058: "MEC_F\xFCllanzeige"
+    400060: MEC_Kompassnadel
+    400062: Metal_Stativ_Luftklappe
+    400064: Plane
+    400066: Steampunk Ofen
+    400068: Steuerrad
+    400070: Steuerrad_CON
+    400072: Steuerrad_Konsole
+    400074: Tankanzeige
+    400076: Treibstoff_Korb
+    400078: "T\xFCr"
+    400080: "T\xFCrknauf"
+    400082: Verbindungsseil_H_L
+    400084: Verbindungsseil_H_R
+    400086: Verbindungsseil_V_L
+    400088: Verbindungsseil_V_R
+    400090: Verbindunsstange
+    400092: Verbindunsstange.001
+    400094: Verbindunsstange.002
+    400096: Verbindunsstange.003
+    400098: Wand
+    400100: Zeiger
+    2100000: M_Korb
+    2100002: M_Abstieg
+    2100004: M_Aufstieg
+    2100006: M_Zeiger
+    2100008: M_Steuerpult
+    2100010: M_Holzrad
+    2100012: M_Licht
+    2100014: M_Verrostete_Mitte
+    2100016: M_Armaturenbrett
+    2100018: M_Knopfbefestigung
+    2100020: No Name
+    2100022: "M_H\xF6henmesser_statisch"
+    2100024: "M_H\xF6henmesser_beweglich"
+    2100026: "M_F\xFCllstandsanzeigenhalter"
+    2100028: M_Tankanzeige
+    2100030: M_Kompass_beweglich
+    2100032: M_Kompass_statisch
+    2100034: M_Wand
+    2100036: "M_T\xFCr"
+    2100038: "M_T\xFCrknopf"
+    2100040: M_KohleKorb
+    2100042: M_Ofen
+    2100044: M_Rohr
+    2100046: M_Schrauben
+    2100048: M_Hidavig
+    2100050: M_Hidavig_Ruder_Befestigung
+    2100052: M_Brennerfundament
+    2100054: M_Brenner_Gehauese
+    2100056: M_Brenner_Unterseite
+    2100058: M_Brenner_Oberseite
+    2100060: M_Verbindungsstange
+    2100062: M_Metal_Stativ_Luftklappe
+    2100064: M_Luftklappe_MEC
+    2100066: M_Luftklappe
+    2100068: M_Gleiter_Holz
+    2100070: M_Gleiter_Hinten
+    2100072: M_Gleiter_Holz._L
+    2100074: M_Gleiter_L
+    2100076: M_Gleiter
+    2300000: //RootNode
+    2300002: Altimeter_beweglich
+    2300004: Altimeter_Station
+    2300006: Altimeter_Statisch
+    2300008: Armaturenbrett
+    2300010: Brenner
+    2300012: BrennerFundament
+    2300014: "BrennerGeh\xE4use"
+    2300016: Buttonhalter_AB
+    2300018: Buttonhalter_BR
+    2300020: Buttonhalter_DOWN
+    2300022: Cylinder
+    2300024: "F\xFCllstandsanzeigenhalter"
+    2300026: Gleiter_Hinten
+    2300028: Gleiter_L
+    2300030: Gleiter_R
+    2300032: Hidavig
+    2300034: Knopf_Abstieg
+    2300036: Knopf_Aufstieg
+    2300038: Knopf_Bremse
+    2300040: Kompass
+    2300042: Kompassbefestigung
+    2300044: Licht
+    2300046: Luftklappe
+    2300048: Luftklappe_MEC
+    2300050: Metal_Stativ_Luftklappe
+    2300052: Plane
+    2300054: Steampunk Ofen
+    2300056: Steuerrad
+    2300058: Steuerrad_CON
+    2300060: Steuerrad_Konsole
+    2300062: Tankanzeige
+    2300064: Treibstoff_Korb
+    2300066: "T\xFCr"
+    2300068: "T\xFCrknauf"
+    2300070: Verbindungsseil_H_L
+    2300072: Verbindungsseil_H_R
+    2300074: Verbindungsseil_V_L
+    2300076: Verbindungsseil_V_R
+    2300078: Verbindunsstange
+    2300080: Verbindunsstange.001
+    2300082: Verbindunsstange.002
+    2300084: Verbindunsstange.003
+    2300086: Wand
+    2300088: Zeiger
+    3300000: //RootNode
+    3300002: Altimeter_beweglich
+    3300004: Altimeter_Station
+    3300006: Altimeter_Statisch
+    3300008: Armaturenbrett
+    3300010: Brenner
+    3300012: BrennerFundament
+    3300014: "BrennerGeh\xE4use"
+    3300016: Buttonhalter_AB
+    3300018: Buttonhalter_BR
+    3300020: Buttonhalter_DOWN
+    3300022: Cylinder
+    3300024: "F\xFCllstandsanzeigenhalter"
+    3300026: Gleiter_Hinten
+    3300028: Gleiter_L
+    3300030: Gleiter_R
+    3300032: Hidavig
+    3300034: Knopf_Abstieg
+    3300036: Knopf_Aufstieg
+    3300038: Knopf_Bremse
+    3300040: Kompass
+    3300042: Kompassbefestigung
+    3300044: Licht
+    3300046: Luftklappe
+    3300048: Luftklappe_MEC
+    3300050: Metal_Stativ_Luftklappe
+    3300052: Plane
+    3300054: Steampunk Ofen
+    3300056: Steuerrad
+    3300058: Steuerrad_CON
+    3300060: Steuerrad_Konsole
+    3300062: Tankanzeige
+    3300064: Treibstoff_Korb
+    3300066: "T\xFCr"
+    3300068: "T\xFCrknauf"
+    3300070: Verbindungsseil_H_L
+    3300072: Verbindungsseil_H_R
+    3300074: Verbindungsseil_V_L
+    3300076: Verbindungsseil_V_R
+    3300078: Verbindunsstange
+    3300080: Verbindunsstange.001
+    3300082: Verbindunsstange.002
+    3300084: Verbindunsstange.003
+    3300086: Wand
+    3300088: Zeiger
+    4300000: "Hei\xDFluftballon_Korb"
+    4300002: Knopf_Bremse
+    4300004: Knopf_Aufstieg
+    4300006: Knopf_Abstieg
+    4300008: Zeiger
+    4300010: Steuerrad_Konsole
+    4300012: Steuerrad_CON
+    4300014: Licht
+    4300016: Steuerrad
+    4300018: Armaturenbrett
+    4300020: Buttonhalter_DOWN
+    4300022: Buttonhalter_AB
+    4300024: Buttonhalter_BR
+    4300026: Altimeter_Station
+    4300028: Altimeter_Statisch
+    4300030: Altimeter_beweglich
+    4300032: "F\xFCllstandsanzeigenhalter"
+    4300034: Tankanzeige
+    4300036: Kompassbefestigung
+    4300038: Plane
+    4300040: Kompass
+    4300042: Wand
+    4300044: "T\xFCr"
+    4300046: "T\xFCrknauf"
+    4300048: Treibstoff_Korb
+    4300050: Steampunk Ofen
+    4300052: Cylinder
+    4300054: Verbindungsseil_H_L
+    4300056: Verbindungsseil_H_R
+    4300058: Verbindungsseil_V_R
+    4300060: Verbindungsseil_V_L
+    4300062: Hidavig
+    4300064: BrennerFundament
+    4300066: "BrennerGeh\xE4use"
+    4300068: Brenner
+    4300070: Verbindunsstange.001
+    4300072: Verbindunsstange
+    4300074: Verbindunsstange.003
+    4300076: Verbindunsstange.002
+    4300078: Metal_Stativ_Luftklappe
+    4300080: Luftklappe_MEC
+    4300082: Luftklappe
+    4300084: Gleiter_Hinten
+    4300086: Gleiter_L
+    4300088: Gleiter_R
+    6400000: //RootNode
+    6400002: Altimeter_beweglich
+    6400004: Altimeter_Station
+    6400006: Altimeter_Statisch
+    6400008: Armaturenbrett
+    6400010: Brenner
+    6400012: BrennerFundament
+    6400014: "BrennerGeh\xE4use"
+    6400016: Buttonhalter_AB
+    6400018: Buttonhalter_BR
+    6400020: Buttonhalter_DOWN
+    6400022: Cylinder
+    6400024: "F\xFCllstandsanzeigenhalter"
+    6400026: Gleiter_Hinten
+    6400028: Gleiter_L
+    6400030: Gleiter_R
+    6400032: Hidavig
+    6400034: Knopf_Abstieg
+    6400036: Knopf_Aufstieg
+    6400038: Knopf_Bremse
+    6400040: Kompass
+    6400042: Kompassbefestigung
+    6400044: Licht
+    6400046: Luftklappe
+    6400048: Luftklappe_MEC
+    6400050: Metal_Stativ_Luftklappe
+    6400052: Plane
+    6400054: Steampunk Ofen
+    6400056: Steuerrad
+    6400058: Steuerrad_CON
+    6400060: Steuerrad_Konsole
+    6400062: Tankanzeige
+    6400064: Treibstoff_Korb
+    6400066: "T\xFCr"
+    6400068: "T\xFCrknauf"
+    6400070: Verbindungsseil_H_L
+    6400072: Verbindungsseil_H_R
+    6400074: Verbindungsseil_V_L
+    6400076: Verbindungsseil_V_R
+    6400078: Verbindunsstange
+    6400080: Verbindunsstange.001
+    6400082: Verbindunsstange.002
+    6400084: Verbindunsstange.003
+    6400086: Wand
+    6400088: Zeiger
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Abstieg
+    second: {fileID: 2100000, guid: e0d527c67382f2a4980a6ee5e42b065f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Armaturenbrett
+    second: {fileID: 2100000, guid: c72c2c1ed94e9244c9e5150f6f11cd84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Aufstieg
+    second: {fileID: 2100000, guid: 4930c97ab6a8837449dbd7bfd6a8470b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Brenner_Gehauese
+    second: {fileID: 2100000, guid: 9ffd67212592ef24a8f1f2b0772410ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Brenner_Oberseite
+    second: {fileID: 2100000, guid: 6e8295acd50ece5468191d594d35c6b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Brenner_Unterseite
+    second: {fileID: 2100000, guid: 36bfdce00865c52408f4ffe4c4d61232, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Brennerfundament
+    second: {fileID: 2100000, guid: 2ae996aee0cf0424eace4085da1ab271, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "M_F\xFCllstandsanzeigenhalter"
+    second: {fileID: 2100000, guid: bbeb6d17f91ffec468b644c26a83f006, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Gleiter
+    second: {fileID: 2100000, guid: 5f8473a8fe906bc429281d82c1393749, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Gleiter_Hinten
+    second: {fileID: 2100000, guid: 804f3436c7316104ba1e5bcd3a16ec75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Gleiter_Holz
+    second: {fileID: 2100000, guid: 8fbd988dee12c40418635537e400623b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Gleiter_Holz._L
+    second: {fileID: 2100000, guid: dc154021151adf842847498ac849b458, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Gleiter_L
+    second: {fileID: 2100000, guid: 50e3c33174290684880e6a0ccc70e1b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Hidavig
+    second: {fileID: 2100000, guid: e10e92430875b9946805848bc731a9f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Hidavig_Ruder_Befestigung
+    second: {fileID: 2100000, guid: b2f764681e653d243abcdc618b79c64b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Holzrad
+    second: {fileID: 2100000, guid: 376154832ea5e0043b58024ca93120b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "M_H\xF6henmesser_beweglich"
+    second: {fileID: 2100000, guid: a1f05050328ec644183aa2872b3f14d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "M_H\xF6henmesser_statisch"
+    second: {fileID: 2100000, guid: d570be881e8df504db75b788c1ddb295, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Knopfbefestigung
+    second: {fileID: 2100000, guid: f9ae7669a8ed01e4486e7396527564a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_KohleKorb
+    second: {fileID: 2100000, guid: ca60f5b8f904b3145b2ec008f6acbe4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Kompass_beweglich
+    second: {fileID: 2100000, guid: 64cb9d89ede757448aa438357415f4f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Kompass_statisch
+    second: {fileID: 2100000, guid: 1d578b6d71e12554b81cd063b7427573, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Korb
+    second: {fileID: 2100000, guid: d9cd8be3b2e47e2408e03cc32dae6e8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Licht
+    second: {fileID: 2100000, guid: 616287736c83b604195ef7dda054a857, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Luftklappe
+    second: {fileID: 2100000, guid: 279b85ce131593e4390ae3ce0408e173, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Luftklappe_MEC
+    second: {fileID: 2100000, guid: 002868a68cd6e5b499064a2f65522dc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Metal_Stativ_Luftklappe
+    second: {fileID: 2100000, guid: 1bbf4e6bac2e41447bccc3ccb53d3ca3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ofen
+    second: {fileID: 2100000, guid: b2e357d9cb12d554b80718d485b56bf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Rohr
+    second: {fileID: 2100000, guid: 3300afa51d18bdf4eae21002bfeeb569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Schrauben
+    second: {fileID: 2100000, guid: 1886764f8cb41e940986a1c216fa4346, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Steuerpult
+    second: {fileID: 2100000, guid: 3161cc5c144fba7448f29af316e07008, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Tankanzeige
+    second: {fileID: 2100000, guid: 09b014cce491d044a8ba92878bd55483, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "M_T\xFCr"
+    second: {fileID: 2100000, guid: a3e55c4e77e3182408b5f329d55da2de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "M_T\xFCrknopf"
+    second: {fileID: 2100000, guid: 2247627f9863ca142b66e4378651d559, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Verbindungsstange
+    second: {fileID: 2100000, guid: e4dcbc7e5552bca42876489a00b48ec9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Verrostete_Mitte
+    second: {fileID: 2100000, guid: c702d84cdad14ba44a90aa5dd72d3e9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wand
+    second: {fileID: 2100000, guid: e1d23917133f18841af1ebce763686d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Zeiger
+    second: {fileID: 2100000, guid: 97b58ef832ab9be46924d97757b4fccf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: eb8c083a3917624458ca998bab1529c2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
