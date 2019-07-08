@@ -275,247 +275,7 @@ ModelImporter:
     4300084: Gleiter_Hinten
     4300086: Gleiter_L
     4300088: Gleiter_R
-    6400000: //RootNode
-    6400002: Altimeter_beweglich
-    6400004: Altimeter_Statisch
-    6400006: Armaturenbrett
-    6400008: Brenner
-    6400010: BrennerFundament
-    6400012: "BrennerGeh\xE4use"
-    6400014: Buttonhalter_AB
-    6400016: Buttonhalter_BR
-    6400018: Buttonhalter_DOWN
-    6400020: Cube
-    6400022: Cylinder
-    6400024: "F\xFCllstandsanzeigenhalter"
-    6400026: Gleiter_Hinten
-    6400028: Gleiter_L
-    6400030: Gleiter_R
-    6400032: Hidavig
-    6400034: Knopf_Abstieg
-    6400036: Knopf_Aufstieg
-    6400038: Knopf_Bremse
-    6400040: Kompass
-    6400042: Kompassbefestigung
-    6400044: Kompassnadel
-    6400046: Licht
-    6400048: Luftklappe
-    6400050: Luftklappe_MEC
-    6400052: Metal_Stativ_Luftklappe
-    6400054: Steampunk Ofen
-    6400056: Steuerrad
-    6400058: Steuerrad_CON
-    6400060: Steuerrad_Konsole
-    6400062: Tankanzeige
-    6400064: Treibstoff_Korb
-    6400066: "T\xFCr"
-    6400068: "T\xFCrknauf"
-    6400070: Verbindungsseil_H_L
-    6400072: Verbindungsseil_H_R
-    6400074: Verbindungsseil_V_L
-    6400076: Verbindungsseil_V_R
-    6400078: Verbindunsstange
-    6400080: Verbindunsstange.001
-    6400082: Verbindunsstange.002
-    6400084: Verbindunsstange.003
-    6400086: Wand
-    6400088: Zeiger
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Abstieg
-    second: {fileID: 2100000, guid: e0d527c67382f2a4980a6ee5e42b065f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Armaturenbrett
-    second: {fileID: 2100000, guid: c72c2c1ed94e9244c9e5150f6f11cd84, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Aufstieg
-    second: {fileID: 2100000, guid: 4930c97ab6a8837449dbd7bfd6a8470b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Brenner_Gehauese
-    second: {fileID: 2100000, guid: 9ffd67212592ef24a8f1f2b0772410ff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Brenner_Oberseite
-    second: {fileID: 2100000, guid: 6e8295acd50ece5468191d594d35c6b7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Brenner_Unterseite
-    second: {fileID: 2100000, guid: 36bfdce00865c52408f4ffe4c4d61232, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Brennerfundament
-    second: {fileID: 2100000, guid: 2ae996aee0cf0424eace4085da1ab271, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "M_F\xFCllstandsanzeigenhalter"
-    second: {fileID: 2100000, guid: bbeb6d17f91ffec468b644c26a83f006, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Gleiter
-    second: {fileID: 2100000, guid: 5f8473a8fe906bc429281d82c1393749, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Gleiter_Hinten
-    second: {fileID: 2100000, guid: 804f3436c7316104ba1e5bcd3a16ec75, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Gleiter_Holz
-    second: {fileID: 2100000, guid: 8fbd988dee12c40418635537e400623b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Gleiter_Holz._L
-    second: {fileID: 2100000, guid: dc154021151adf842847498ac849b458, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Gleiter_L
-    second: {fileID: 2100000, guid: 50e3c33174290684880e6a0ccc70e1b9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Hidavig
-    second: {fileID: 2100000, guid: e10e92430875b9946805848bc731a9f8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Hidavig_Ruder_Befestigung
-    second: {fileID: 2100000, guid: b2f764681e653d243abcdc618b79c64b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Holzrad
-    second: {fileID: 2100000, guid: 376154832ea5e0043b58024ca93120b1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "M_H\xF6henmesser_beweglich"
-    second: {fileID: 2100000, guid: a1f05050328ec644183aa2872b3f14d0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "M_H\xF6henmesser_statisch"
-    second: {fileID: 2100000, guid: d570be881e8df504db75b788c1ddb295, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Knopfbefestigung
-    second: {fileID: 2100000, guid: f9ae7669a8ed01e4486e7396527564a7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_KohleKorb
-    second: {fileID: 2100000, guid: ca60f5b8f904b3145b2ec008f6acbe4a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Kompass_beweglich
-    second: {fileID: 2100000, guid: 64cb9d89ede757448aa438357415f4f4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Kompass_statisch
-    second: {fileID: 2100000, guid: 1d578b6d71e12554b81cd063b7427573, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Korb
-    second: {fileID: 2100000, guid: d9cd8be3b2e47e2408e03cc32dae6e8f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Licht
-    second: {fileID: 2100000, guid: 616287736c83b604195ef7dda054a857, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Luftklappe
-    second: {fileID: 2100000, guid: 279b85ce131593e4390ae3ce0408e173, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Luftklappe_MEC
-    second: {fileID: 2100000, guid: 002868a68cd6e5b499064a2f65522dc4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Metal_Stativ_Luftklappe
-    second: {fileID: 2100000, guid: 1bbf4e6bac2e41447bccc3ccb53d3ca3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Ofen
-    second: {fileID: 2100000, guid: b2e357d9cb12d554b80718d485b56bf2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Rohr
-    second: {fileID: 2100000, guid: 3300afa51d18bdf4eae21002bfeeb569, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Schrauben
-    second: {fileID: 2100000, guid: 1886764f8cb41e940986a1c216fa4346, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Steuerpult
-    second: {fileID: 2100000, guid: 3161cc5c144fba7448f29af316e07008, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Tankanzeige
-    second: {fileID: 2100000, guid: 09b014cce491d044a8ba92878bd55483, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "M_T\xFCr"
-    second: {fileID: 2100000, guid: a3e55c4e77e3182408b5f329d55da2de, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "M_T\xFCrknopf"
-    second: {fileID: 2100000, guid: 2247627f9863ca142b66e4378651d559, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Verbindungsstange
-    second: {fileID: 2100000, guid: e4dcbc7e5552bca42876489a00b48ec9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Verrostete_Mitte
-    second: {fileID: 2100000, guid: c702d84cdad14ba44a90aa5dd72d3e9e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Wand
-    second: {fileID: 2100000, guid: e1d23917133f18841af1ebce763686d3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Zeiger
-    second: {fileID: 2100000, guid: 97b58ef832ab9be46924d97757b4fccf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: eb8c083a3917624458ca998bab1529c2, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 1
@@ -548,7 +308,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
@@ -566,7 +326,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
@@ -577,7 +337,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
