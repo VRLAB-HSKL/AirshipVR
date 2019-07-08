@@ -1,176 +1,166 @@
 fileFormatVersion: 2
-guid: 68be9a3a56e1d9242ae475b17c013644
+guid: 4af9a9d921ab57848aa317e06f80b577
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: Altimeter_beweglich
-    100004: Altimeter_Station
-    100006: Altimeter_Statisch
-    100008: Armaturenbrett
-    100010: Brenner
-    100012: BrennerFundament
-    100014: "BrennerGeh\xE4use"
-    100016: Buttonhalter_AB
-    100018: Buttonhalter_BR
-    100020: Buttonhalter_DOWN
+    100004: Altimeter_Statisch
+    100006: Armaturenbrett
+    100008: Brenner
+    100010: BrennerFundament
+    100012: "BrennerGeh\xE4use"
+    100014: Buttonhalter_AB
+    100016: Buttonhalter_BR
+    100018: Buttonhalter_DOWN
+    100020: Cube
     100022: Cylinder
     100024: "F\xFCllstandsanzeigenhalter"
     100026: Gleiter_Hinten
     100028: Gleiter_L
     100030: Gleiter_R
-    100032: Hidavig
-    100034: Knopf_Abstieg
-    100036: Knopf_Aufstieg
-    100038: Knopf_Bremse
-    100040: Kompass
-    100042: Kompassbefestigung
-    100044: Licht
-    100046: Luftklappe
-    100048: Luftklappe_MEC
-    100050: MEC_Altimeter
-    100052: MEC_BTN_BREAK
-    100054: MEC_BTN_DOWN
-    100056: MEC_BTN_UP
-    100058: "MEC_F\xFCllanzeige"
-    100060: MEC_Kompassnadel
-    100062: Metal_Stativ_Luftklappe
-    100064: Plane
-    100066: Steampunk Ofen
-    100068: Steuerrad
-    100070: Steuerrad_CON
-    100072: Steuerrad_Konsole
-    100074: Tankanzeige
-    100076: Treibstoff_Korb
-    100078: "T\xFCr"
-    100080: "T\xFCrknauf"
-    100082: Verbindungsseil_H_L
-    100084: Verbindungsseil_H_R
-    100086: Verbindungsseil_V_L
-    100088: Verbindungsseil_V_R
-    100090: Verbindunsstange
-    100092: Verbindunsstange.001
-    100094: Verbindunsstange.002
-    100096: Verbindunsstange.003
-    100098: Wand
-    100100: Zeiger
+    100032: "Hei\xDFluftballon_Korb"
+    100034: Hidavig
+    100036: Knopf_Abstieg
+    100038: Knopf_Aufstieg
+    100040: Knopf_Bremse
+    100042: Kompass
+    100044: Kompassbefestigung
+    100046: Kompassnadel
+    100048: Licht
+    100050: Luftklappe
+    100052: Luftklappe_MEC
+    100054: Metal_Stativ_Luftklappe
+    100056: Steampunk Ofen
+    100058: Steuerrad
+    100060: Steuerrad_CON
+    100062: Steuerrad_Konsole
+    100064: Tankanzeige
+    100066: Treibstoff_Korb
+    100068: "T\xFCr"
+    100070: "T\xFCrknauf"
+    100072: Verbindungsseil_H_L
+    100074: Verbindungsseil_H_R
+    100076: Verbindungsseil_V_L
+    100078: Verbindungsseil_V_R
+    100080: Verbindunsstange
+    100082: Verbindunsstange.001
+    100084: Verbindunsstange.002
+    100086: Verbindunsstange.003
+    100088: Wand
+    100090: Zeiger
     400000: //RootNode
     400002: Altimeter_beweglich
-    400004: Altimeter_Station
-    400006: Altimeter_Statisch
-    400008: Armaturenbrett
-    400010: Brenner
-    400012: BrennerFundament
-    400014: "BrennerGeh\xE4use"
-    400016: Buttonhalter_AB
-    400018: Buttonhalter_BR
-    400020: Buttonhalter_DOWN
+    400004: Altimeter_Statisch
+    400006: Armaturenbrett
+    400008: Brenner
+    400010: BrennerFundament
+    400012: "BrennerGeh\xE4use"
+    400014: Buttonhalter_AB
+    400016: Buttonhalter_BR
+    400018: Buttonhalter_DOWN
+    400020: Cube
     400022: Cylinder
     400024: "F\xFCllstandsanzeigenhalter"
     400026: Gleiter_Hinten
     400028: Gleiter_L
     400030: Gleiter_R
-    400032: Hidavig
-    400034: Knopf_Abstieg
-    400036: Knopf_Aufstieg
-    400038: Knopf_Bremse
-    400040: Kompass
-    400042: Kompassbefestigung
-    400044: Licht
-    400046: Luftklappe
-    400048: Luftklappe_MEC
-    400050: MEC_Altimeter
-    400052: MEC_BTN_BREAK
-    400054: MEC_BTN_DOWN
-    400056: MEC_BTN_UP
-    400058: "MEC_F\xFCllanzeige"
-    400060: MEC_Kompassnadel
-    400062: Metal_Stativ_Luftklappe
-    400064: Plane
-    400066: Steampunk Ofen
-    400068: Steuerrad
-    400070: Steuerrad_CON
-    400072: Steuerrad_Konsole
-    400074: Tankanzeige
-    400076: Treibstoff_Korb
-    400078: "T\xFCr"
-    400080: "T\xFCrknauf"
-    400082: Verbindungsseil_H_L
-    400084: Verbindungsseil_H_R
-    400086: Verbindungsseil_V_L
-    400088: Verbindungsseil_V_R
-    400090: Verbindunsstange
-    400092: Verbindunsstange.001
-    400094: Verbindunsstange.002
-    400096: Verbindunsstange.003
-    400098: Wand
-    400100: Zeiger
+    400032: "Hei\xDFluftballon_Korb"
+    400034: Hidavig
+    400036: Knopf_Abstieg
+    400038: Knopf_Aufstieg
+    400040: Knopf_Bremse
+    400042: Kompass
+    400044: Kompassbefestigung
+    400046: Kompassnadel
+    400048: Licht
+    400050: Luftklappe
+    400052: Luftklappe_MEC
+    400054: Metal_Stativ_Luftklappe
+    400056: Steampunk Ofen
+    400058: Steuerrad
+    400060: Steuerrad_CON
+    400062: Steuerrad_Konsole
+    400064: Tankanzeige
+    400066: Treibstoff_Korb
+    400068: "T\xFCr"
+    400070: "T\xFCrknauf"
+    400072: Verbindungsseil_H_L
+    400074: Verbindungsseil_H_R
+    400076: Verbindungsseil_V_L
+    400078: Verbindungsseil_V_R
+    400080: Verbindunsstange
+    400082: Verbindunsstange.001
+    400084: Verbindunsstange.002
+    400086: Verbindunsstange.003
+    400088: Wand
+    400090: Zeiger
     2100000: M_Korb
-    2100002: M_Abstieg
-    2100004: M_Aufstieg
-    2100006: M_Zeiger
-    2100008: M_Steuerpult
-    2100010: M_Holzrad
-    2100012: M_Licht
-    2100014: M_Verrostete_Mitte
-    2100016: M_Armaturenbrett
+    2100002: M_Steuerpult
+    2100004: M_Holzrad
+    2100006: M_Licht
+    2100008: M_Verrostete_Mitte
+    2100010: M_Armaturenbrett
+    2100012: No Name
+    2100014: "M_H\xF6henmesser_statisch"
+    2100016: "M_H\xF6henmesser_beweglich"
     2100018: M_Knopfbefestigung
-    2100020: No Name
-    2100022: "M_H\xF6henmesser_statisch"
-    2100024: "M_H\xF6henmesser_beweglich"
-    2100026: "M_F\xFCllstandsanzeigenhalter"
-    2100028: M_Tankanzeige
-    2100030: M_Kompass_beweglich
-    2100032: M_Kompass_statisch
-    2100034: M_Wand
-    2100036: "M_T\xFCr"
-    2100038: "M_T\xFCrknopf"
-    2100040: M_KohleKorb
-    2100042: M_Ofen
-    2100044: M_Rohr
-    2100046: M_Schrauben
-    2100048: M_Hidavig
-    2100050: M_Hidavig_Ruder_Befestigung
-    2100052: M_Brennerfundament
-    2100054: M_Brenner_Gehauese
-    2100056: M_Brenner_Unterseite
-    2100058: M_Brenner_Oberseite
-    2100060: M_Verbindungsstange
-    2100062: M_Metal_Stativ_Luftklappe
-    2100064: M_Luftklappe_MEC
-    2100066: M_Luftklappe
-    2100068: M_Gleiter_Holz
-    2100070: M_Gleiter_Hinten
-    2100072: M_Gleiter_Holz._L
-    2100074: M_Gleiter_L
-    2100076: M_Gleiter
-    2300000: //RootNode
-    2300002: Altimeter_beweglich
-    2300004: Altimeter_Station
-    2300006: Altimeter_Statisch
-    2300008: Armaturenbrett
-    2300010: Brenner
-    2300012: BrennerFundament
-    2300014: "BrennerGeh\xE4use"
-    2300016: Buttonhalter_AB
-    2300018: Buttonhalter_BR
-    2300020: Buttonhalter_DOWN
-    2300022: Cylinder
-    2300024: "F\xFCllstandsanzeigenhalter"
-    2300026: Gleiter_Hinten
-    2300028: Gleiter_L
-    2300030: Gleiter_R
+    2100020: "M_F\xFCllstandsanzeigenhalter"
+    2100022: M_Tankanzeige
+    2100024: M_Kompass_statisch
+    2100026: M_Wand
+    2100028: "M_T\xFCr"
+    2100030: "M_T\xFCrknopf"
+    2100032: M_KohleKorb
+    2100034: M_Ofen
+    2100036: M_Rohr
+    2100038: M_Schrauben
+    2100040: M_Hidavig
+    2100042: M_Hidavig_Ruder_Befestigung
+    2100044: M_Brennerfundament
+    2100046: M_Brenner_Gehauese
+    2100048: M_Brenner_Unterseite
+    2100050: M_Brenner_Oberseite
+    2100052: M_Verbindungsstange
+    2100054: M_Metal_Stativ_Luftklappe
+    2100056: M_Luftklappe_MEC
+    2100058: M_Luftklappe
+    2100060: M_Gleiter_Holz
+    2100062: M_Gleiter_Hinten
+    2100064: M_Gleiter_Holz._L
+    2100066: M_Gleiter_L
+    2100068: M_Gleiter
+    2100070: M_Abstieg
+    2100072: M_Aufstieg
+    2100074: M_Zeiger
+    2100076: M_Kompass_beweglich
+    2300000: Altimeter_beweglich
+    2300002: Altimeter_Statisch
+    2300004: Armaturenbrett
+    2300006: Brenner
+    2300008: BrennerFundament
+    2300010: "BrennerGeh\xE4use"
+    2300012: Buttonhalter_AB
+    2300014: Buttonhalter_BR
+    2300016: Buttonhalter_DOWN
+    2300018: Cube
+    2300020: Cylinder
+    2300022: "F\xFCllstandsanzeigenhalter"
+    2300024: Gleiter_Hinten
+    2300026: Gleiter_L
+    2300028: Gleiter_R
+    2300030: "Hei\xDFluftballon_Korb"
     2300032: Hidavig
     2300034: Knopf_Abstieg
     2300036: Knopf_Aufstieg
     2300038: Knopf_Bremse
     2300040: Kompass
     2300042: Kompassbefestigung
-    2300044: Licht
-    2300046: Luftklappe
-    2300048: Luftklappe_MEC
-    2300050: Metal_Stativ_Luftklappe
-    2300052: Plane
+    2300044: Kompassnadel
+    2300046: Licht
+    2300048: Luftklappe
+    2300050: Luftklappe_MEC
+    2300052: Metal_Stativ_Luftklappe
     2300054: Steampunk Ofen
     2300056: Steuerrad
     2300058: Steuerrad_CON
@@ -189,33 +179,33 @@ ModelImporter:
     2300084: Verbindunsstange.003
     2300086: Wand
     2300088: Zeiger
-    3300000: //RootNode
-    3300002: Altimeter_beweglich
-    3300004: Altimeter_Station
-    3300006: Altimeter_Statisch
-    3300008: Armaturenbrett
-    3300010: Brenner
-    3300012: BrennerFundament
-    3300014: "BrennerGeh\xE4use"
-    3300016: Buttonhalter_AB
-    3300018: Buttonhalter_BR
-    3300020: Buttonhalter_DOWN
-    3300022: Cylinder
-    3300024: "F\xFCllstandsanzeigenhalter"
-    3300026: Gleiter_Hinten
-    3300028: Gleiter_L
-    3300030: Gleiter_R
+    3300000: Altimeter_beweglich
+    3300002: Altimeter_Statisch
+    3300004: Armaturenbrett
+    3300006: Brenner
+    3300008: BrennerFundament
+    3300010: "BrennerGeh\xE4use"
+    3300012: Buttonhalter_AB
+    3300014: Buttonhalter_BR
+    3300016: Buttonhalter_DOWN
+    3300018: Cube
+    3300020: Cylinder
+    3300022: "F\xFCllstandsanzeigenhalter"
+    3300024: Gleiter_Hinten
+    3300026: Gleiter_L
+    3300028: Gleiter_R
+    3300030: "Hei\xDFluftballon_Korb"
     3300032: Hidavig
     3300034: Knopf_Abstieg
     3300036: Knopf_Aufstieg
     3300038: Knopf_Bremse
     3300040: Kompass
     3300042: Kompassbefestigung
-    3300044: Licht
-    3300046: Luftklappe
-    3300048: Luftklappe_MEC
-    3300050: Metal_Stativ_Luftklappe
-    3300052: Plane
+    3300044: Kompassnadel
+    3300046: Licht
+    3300048: Luftklappe
+    3300050: Luftklappe_MEC
+    3300052: Metal_Stativ_Luftklappe
     3300054: Steampunk Ofen
     3300056: Steuerrad
     3300058: Steuerrad_CON
@@ -235,77 +225,77 @@ ModelImporter:
     3300086: Wand
     3300088: Zeiger
     4300000: "Hei\xDFluftballon_Korb"
-    4300002: Knopf_Bremse
-    4300004: Knopf_Aufstieg
-    4300006: Knopf_Abstieg
-    4300008: Zeiger
-    4300010: Steuerrad_Konsole
-    4300012: Steuerrad_CON
-    4300014: Licht
-    4300016: Steuerrad
-    4300018: Armaturenbrett
-    4300020: Buttonhalter_DOWN
-    4300022: Buttonhalter_AB
-    4300024: Buttonhalter_BR
-    4300026: Altimeter_Station
-    4300028: Altimeter_Statisch
-    4300030: Altimeter_beweglich
-    4300032: "F\xFCllstandsanzeigenhalter"
-    4300034: Tankanzeige
-    4300036: Kompassbefestigung
-    4300038: Plane
-    4300040: Kompass
-    4300042: Wand
-    4300044: "T\xFCr"
-    4300046: "T\xFCrknauf"
-    4300048: Treibstoff_Korb
-    4300050: Steampunk Ofen
-    4300052: Cylinder
-    4300054: Verbindungsseil_H_L
-    4300056: Verbindungsseil_H_R
-    4300058: Verbindungsseil_V_R
-    4300060: Verbindungsseil_V_L
-    4300062: Hidavig
-    4300064: BrennerFundament
-    4300066: "BrennerGeh\xE4use"
-    4300068: Brenner
-    4300070: Verbindunsstange.001
-    4300072: Verbindunsstange
-    4300074: Verbindunsstange.003
-    4300076: Verbindunsstange.002
-    4300078: Metal_Stativ_Luftklappe
-    4300080: Luftklappe_MEC
-    4300082: Luftklappe
-    4300084: Gleiter_Hinten
-    4300086: Gleiter_L
-    4300088: Gleiter_R
-    6400000: //RootNode
-    6400002: Altimeter_beweglich
-    6400004: Altimeter_Station
-    6400006: Altimeter_Statisch
-    6400008: Armaturenbrett
-    6400010: Brenner
-    6400012: BrennerFundament
-    6400014: "BrennerGeh\xE4use"
-    6400016: Buttonhalter_AB
-    6400018: Buttonhalter_BR
-    6400020: Buttonhalter_DOWN
-    6400022: Cylinder
-    6400024: "F\xFCllstandsanzeigenhalter"
-    6400026: Gleiter_Hinten
-    6400028: Gleiter_L
-    6400030: Gleiter_R
+    4300002: Steuerrad_Konsole
+    4300004: Steuerrad_CON
+    4300006: Licht
+    4300008: Steuerrad
+    4300010: Armaturenbrett
+    4300012: Cube
+    4300014: Altimeter_Statisch
+    4300016: Altimeter_beweglich
+    4300018: Buttonhalter_DOWN
+    4300020: Buttonhalter_AB
+    4300022: Buttonhalter_BR
+    4300024: "F\xFCllstandsanzeigenhalter"
+    4300026: Tankanzeige
+    4300028: Kompassbefestigung
+    4300030: Kompass
+    4300032: Wand
+    4300034: "T\xFCr"
+    4300036: "T\xFCrknauf"
+    4300038: Treibstoff_Korb
+    4300040: Steampunk Ofen
+    4300042: Cylinder
+    4300044: Verbindungsseil_H_L
+    4300046: Verbindungsseil_H_R
+    4300048: Verbindungsseil_V_R
+    4300050: Verbindungsseil_V_L
+    4300052: Hidavig
+    4300054: BrennerFundament
+    4300056: "BrennerGeh\xE4use"
+    4300058: Brenner
+    4300060: Verbindunsstange.001
+    4300062: Verbindunsstange
+    4300064: Verbindunsstange.003
+    4300066: Verbindunsstange.002
+    4300068: Metal_Stativ_Luftklappe
+    4300070: Luftklappe_MEC
+    4300072: Luftklappe
+    4300074: Gleiter_Hinten
+    4300076: Gleiter_L
+    4300078: Gleiter_R
+    4300080: Knopf_Bremse
+    4300082: Knopf_Aufstieg
+    4300084: Knopf_Abstieg
+    4300086: Zeiger
+    4300088: Kompassnadel
+    6400000: Altimeter_beweglich
+    6400002: Altimeter_Statisch
+    6400004: Armaturenbrett
+    6400006: Brenner
+    6400008: BrennerFundament
+    6400010: "BrennerGeh\xE4use"
+    6400012: Buttonhalter_AB
+    6400014: Buttonhalter_BR
+    6400016: Buttonhalter_DOWN
+    6400018: Cube
+    6400020: Cylinder
+    6400022: "F\xFCllstandsanzeigenhalter"
+    6400024: Gleiter_Hinten
+    6400026: Gleiter_L
+    6400028: Gleiter_R
+    6400030: "Hei\xDFluftballon_Korb"
     6400032: Hidavig
     6400034: Knopf_Abstieg
     6400036: Knopf_Aufstieg
     6400038: Knopf_Bremse
     6400040: Kompass
     6400042: Kompassbefestigung
-    6400044: Licht
-    6400046: Luftklappe
-    6400048: Luftklappe_MEC
-    6400050: Metal_Stativ_Luftklappe
-    6400052: Plane
+    6400044: Kompassnadel
+    6400046: Licht
+    6400048: Luftklappe
+    6400050: Luftklappe_MEC
+    6400052: Metal_Stativ_Luftklappe
     6400054: Steampunk Ofen
     6400056: Steuerrad
     6400058: Steuerrad_CON
@@ -559,7 +549,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
