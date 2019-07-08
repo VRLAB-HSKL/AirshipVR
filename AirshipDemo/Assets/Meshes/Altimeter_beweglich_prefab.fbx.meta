@@ -1,62 +1,20 @@
 fileFormatVersion: 2
-guid: 209eaf324202c9948ae2d2afc25b12d6
+guid: 38656dd3f498e8e4397caf43518ccbc2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Leaf
-    100002: Leaf.001
-    100004: Leaf.002
-    100006: Leaf.003
-    100008: Leaf.004
-    100010: //RootNode
-    400000: Leaf
-    400002: Leaf.001
-    400004: Leaf.002
-    400006: Leaf.003
-    400008: Leaf.004
-    400010: //RootNode
-    2100000: M_Tree
-    2100002: M_Leaves
-    2300000: Leaf
-    2300002: Leaf.001
-    2300004: Leaf.002
-    2300006: Leaf.003
-    2300008: Leaf.004
-    2300010: //RootNode
-    3300000: Leaf
-    3300002: Leaf.001
-    3300004: Leaf.002
-    3300006: Leaf.003
-    3300008: Leaf.004
-    3300010: //RootNode
-    4300000: Tree
-    4300002: Leaf.004
-    4300004: Leaf.003
-    4300006: Leaf.002
-    4300008: Leaf.001
-    4300010: Leaf
-    6400000: Leaf
-    6400002: Leaf.001
-    6400004: Leaf.002
-    6400006: Leaf.003
-    6400008: Leaf.004
-    6400010: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Leaves
-    second: {fileID: 2100000, guid: f97b625c6d83eb4409067b381ab0652e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Tree
-    second: {fileID: 2100000, guid: 97bd53002bf392d4e9c55e14e65aa8c8, type: 2}
+    100000: //RootNode
+    400000: //RootNode
+    2100000: "M_H\xF6henmesser_beweglich"
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Altimeter_beweglich
+  externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -84,7 +42,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
