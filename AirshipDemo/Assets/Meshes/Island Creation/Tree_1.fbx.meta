@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 0558932a5d082054cbd6c6bf4d05b39e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Icosphere
+    100002: Icosphere.001
+    100004: Icosphere.002
+    100006: Icosphere.003
+    100008: Icosphere.004
+    100010: Icosphere.005
+    100012: Icosphere.006
+    100014: Leaf
+    100016: Leaf.001
+    100018: Leaf.002
+    100020: Leaf.003
+    100022: Leaf.004
+    100024: Leaf.005
+    100026: //RootNode
+    400000: Icosphere
+    400002: Icosphere.001
+    400004: Icosphere.002
+    400006: Icosphere.003
+    400008: Icosphere.004
+    400010: Icosphere.005
+    400012: Icosphere.006
+    400014: Leaf
+    400016: Leaf.001
+    400018: Leaf.002
+    400020: Leaf.003
+    400022: Leaf.004
+    400024: Leaf.005
+    400026: //RootNode
+    2100000: M_Tree
+    2100002: M_Leaves
+    2300000: Icosphere
+    2300002: Icosphere.001
+    2300004: Icosphere.002
+    2300006: Icosphere.003
+    2300008: Icosphere.004
+    2300010: Icosphere.005
+    2300012: Icosphere.006
+    2300014: Leaf
+    2300016: Leaf.001
+    2300018: Leaf.002
+    2300020: Leaf.003
+    2300022: Leaf.004
+    2300024: Leaf.005
+    2300026: //RootNode
+    3300000: Icosphere
+    3300002: Icosphere.001
+    3300004: Icosphere.002
+    3300006: Icosphere.003
+    3300008: Icosphere.004
+    3300010: Icosphere.005
+    3300012: Icosphere.006
+    3300014: Leaf
+    3300016: Leaf.001
+    3300018: Leaf.002
+    3300020: Leaf.003
+    3300022: Leaf.004
+    3300024: Leaf.005
+    3300026: //RootNode
+    4300000: Tree
+    4300002: Icosphere.006
+    4300004: Icosphere.005
+    4300006: Icosphere.003
+    4300008: Icosphere.004
+    4300010: Icosphere.001
+    4300012: Icosphere.002
+    4300014: Icosphere
+    4300016: Leaf.002
+    4300018: Leaf
+    4300020: Leaf.001
+    4300022: Leaf.005
+    4300024: Leaf.003
+    4300026: Leaf.004
+    6400000: Icosphere
+    6400002: Icosphere.001
+    6400004: Icosphere.002
+    6400006: Icosphere.003
+    6400008: Icosphere.004
+    6400010: Icosphere.005
+    6400012: Icosphere.006
+    6400014: Leaf
+    6400016: Leaf.001
+    6400018: Leaf.002
+    6400020: Leaf.003
+    6400022: Leaf.004
+    6400024: Leaf.005
+    6400026: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Leaves
+    second: {fileID: 2100000, guid: f97b625c6d83eb4409067b381ab0652e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Tree
+    second: {fileID: 2100000, guid: 97bd53002bf392d4e9c55e14e65aa8c8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
