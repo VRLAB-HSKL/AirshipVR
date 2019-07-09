@@ -112,63 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &348789068
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_Name
-      value: ViveCameraRig
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.123
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.624
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.488
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
 --- !u!1 &693562027
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130244962
 GameObject:
@@ -327,7 +270,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &8228660638684140925
 PrefabInstance:
@@ -379,7 +322,7 @@ PrefabInstance:
     - target: {fileID: 8228660638330980151, guid: 7dc477e0678215b418c590b265412fa7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8228660638330980151, guid: 7dc477e0678215b418c590b265412fa7,
         type: 3}
@@ -401,7 +344,33 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 693562031}
-    m_RemovedComponents: []
+    - target: {fileID: 8228660638330980150, guid: 7dc477e0678215b418c590b265412fa7,
+        type: 3}
+      propertyPath: balloon
+      value: 
+      objectReference: {fileID: 8228660638684140930}
+    - target: {fileID: 8228660638330980150, guid: 7dc477e0678215b418c590b265412fa7,
+        type: 3}
+      propertyPath: steeringWheel
+      value: 
+      objectReference: {fileID: 8228660638684140931}
+    - target: {fileID: 8228660638330980150, guid: 7dc477e0678215b418c590b265412fa7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254333105430522450, guid: 7dc477e0678215b418c590b265412fa7,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254333105430522450, guid: 7dc477e0678215b418c590b265412fa7,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 87161478148650666, guid: 7dc477e0678215b418c590b265412fa7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7dc477e0678215b418c590b265412fa7, type: 3}
 --- !u!1 &8228660638684140926 stripped
 GameObject:
@@ -491,3 +460,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!4 &8228660638684140930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8228660637381258313, guid: 7dc477e0678215b418c590b265412fa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8228660638684140925}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8228660638684140931 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8228660638517748194, guid: 7dc477e0678215b418c590b265412fa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8228660638684140925}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0173c7860833b64c8c295a197f7795d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
