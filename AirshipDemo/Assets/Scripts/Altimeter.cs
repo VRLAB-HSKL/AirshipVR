@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeightMeasure : MonoBehaviour
+public class Altimeter : MonoBehaviour
 {
     [SerializeField] Transform pointer;
 
     [SerializeField]
     [Range(.001f, 20f)]
-    float eventRange;
+    float eventRange = 20f;
 
     [SerializeField]
     float actualHeight;
 
-    float scaleRange = .5f;
-    
+    [SerializeField]
+    float scaleRange = 0.13f;
+
     [SerializeField]
     [Range(-1f, 1f)]
     float percent;
