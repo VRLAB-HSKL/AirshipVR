@@ -15,7 +15,7 @@ public class Airship : MonoBehaviour
 
 
     [SerializeField]
-    [Range(0f, 1f)]
+    [Range(0f, 2f)]
     float speedForward = 1f;
     [SerializeField]
     [Range(1f, 2f)]
@@ -29,10 +29,6 @@ public class Airship : MonoBehaviour
     [SerializeField]
     [Range(-2f, 2f)]
     float steer = 0;
-    [SerializeField] float lockedStear;
-    [SerializeField] bool holdingStear = false;
-
-    bool unabled = false;
 
     [SerializeField] bool lift = false;
     [SerializeField] bool fall = false;
@@ -42,7 +38,7 @@ public class Airship : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -50,25 +46,12 @@ public class Airship : MonoBehaviour
     {
         steer = steeringWheel.GetSteeringValue;
 
-        if (holdingStear)
-        {
-            if (!unabled)
-            {
-                lockedStear = steer;
-                unabled = true;
-            }
-        }
-        else
-        {
-            unabled = false;
-        }
-
         if (!steer.Equals(0))
         {
             Stear();
         }
         transform.position += transform.forward * speedForward * Time.deltaTime;
-        
+
 
         if (lift && fall)
         {
@@ -97,14 +80,14 @@ public class Airship : MonoBehaviour
 
     void Oscillate(float range)
     {
-        balloon.transform.localPosition = new Vector3(0f, 
-            Mathf.PingPong(Time.time * oscillationTime, range), 
+        balloon.transform.localPosition = new Vector3(0f,
+            Mathf.PingPong(Time.time * oscillationTime, range),
             0f);
     }
 
     void Stear()
     {
-        float targetRotation = (!holdingStear ? steer : lockedStear) * rotationSpeed + transform.eulerAngles.y;
+        float targetRotation = steer * rotationSpeed + transform.eulerAngles.y;
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, (Vector3.up * targetRotation).y, 0f), 10f);
     }

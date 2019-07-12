@@ -21,7 +21,7 @@ public class Altimeter : MonoBehaviour
     float percent;
 
     [SerializeField]
-
+    float offset = 50f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +31,9 @@ public class Altimeter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        actualHeight = Mathf.Clamp(transform.position.y, -eventRange, eventRange);
+        actualHeight = Mathf.Clamp(transform.position.y, -eventRange + offset, eventRange + offset);
 
-        percent = actualHeight / eventRange;
+        percent = (actualHeight - offset) / eventRange;
 
         pointer.transform.localPosition = new Vector3(pointer.transform.localPosition.x, scaleRange * percent, pointer.transform.localPosition.z);
     }

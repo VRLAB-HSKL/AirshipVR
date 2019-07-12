@@ -57,6 +57,6 @@ public class SteeringWheel : MonoBehaviour
 
         steeringValue = -actualAngle * (maxAngle / 360) / maxAngle;
 
-        transform.rotation = Quaternion.Euler(0f, 0f, actualAngle);
+        transform.localRotation = Quaternion.Euler(transform.localRotation.x, transform.localRotation.y, actualAngle);
     }
 }
