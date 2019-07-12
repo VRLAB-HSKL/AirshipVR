@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShipDemo.unity
     guid: 86794be6f8490c4419338ae95a0f0b61
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: aed025c911271bd41ab724c5bdee888e
   m_configObjects: {}
