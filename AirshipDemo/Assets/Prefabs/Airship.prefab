@@ -141,6 +141,83 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &2312761476523961467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7681888106776072403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 7681888106775606565}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
+--- !u!114 &5119410143470527784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7681888106776072403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 5a7cfd839ad856b448490514f7e500c5, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &8228660636955053188
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +507,7 @@ MonoBehaviour:
   speedForward: 1
   speedVertical: 1
   rotationSpeed: 0.1
-  steeringWheel: {fileID: 8228660638517748194}
+  steeringWheel: {fileID: 0}
   steer: 0
   lockedStear: 0
   holdingStear: 0
@@ -446,7 +523,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8228660638517748195}
-  - component: {fileID: 8228660638517748194}
   - component: {fileID: 7739686838813827024}
   m_Layer: 0
   m_Name: SteeringWheel
@@ -470,25 +546,6 @@ Transform:
   m_Father: {fileID: 8228660637381258313}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8228660638517748194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8228660638517748192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0173c7860833b64c8c295a197f7795d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actualAngle: 0
-  maxAngle: 720
-  deltaAngle: 0
-  oldVector: {x: 0, y: 0, z: 0}
-  newVector: {x: 0, y: 0, z: 0}
-  stearingValue: 0
-  locked: 0
 --- !u!114 &7739686838813827024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ViveCameraRig
       objectReference: {fileID: 0}
+    - target: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -809,8 +870,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+--- !u!1 &7681888106776072403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7681888106775992385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7681888106775606565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 404836, guid: cb3370c18187bb444b240cfb08dcc02f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7681888106775992385}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7681888106775660817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f,
