@@ -48,7 +48,7 @@ public class Airship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        steer = steeringWheel.GetStearingValue();
+        steer = steeringWheel.GetSteeringValue;
 
         if (holdingStear)
         {
