@@ -20,6 +20,9 @@ public class Altimeter : MonoBehaviour
     [Range(-1f, 1f)]
     float percent;
 
+    [SerializeField]
+
+
     // Start is called before the first frame update
     void Start()
     {
