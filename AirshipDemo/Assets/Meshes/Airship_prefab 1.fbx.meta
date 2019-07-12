@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76251032b8f973647b32077cdf654c11
+guid: 7216b708cf03f194bb44ffd0baaacf56
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -17,19 +17,18 @@ ModelImporter:
     2100018: M_Ofen
     2100020: M_Rohr
     2100022: M_Schrauben
-    2100024: M_Brennerfundament
-    2100026: M_Brenner_Gehauese
-    2100028: M_Brenner_Unterseite
-    2100030: M_Brenner_Oberseite
-    2100032: M_Verbindungsstange
-    2100034: M_Metal_Stativ_Luftklappe
-    2100036: M_Luftklappe_MEC
-    2100038: M_Luftklappe
-    2100040: M_Gleiter_Holz
-    2100042: M_Gleiter_Hinten
-    2100044: M_Gleiter_Holz._L
-    2100046: M_Gleiter_L
-    2100048: M_Gleiter
+    2100024: M_Rope
+    2100026: M_Brennerfundament
+    2100028: M_Brenner_Gehauese
+    2100030: M_Brenner_Unterseite
+    2100032: M_Brenner_Oberseite
+    2100034: M_Verbindungsstange
+    2100036: M_Gleiter_Holz
+    2100038: M_Gleiter_Hinten
+    2100040: M_Gleiter_Holz._L
+    2100042: M_Gleiter_L
+    2100044: M_Gleiter
+    2100046: M_Metal_Stativ_Luftklappe
     2300000: //RootNode
     3300000: //RootNode
     4300000: Hidavig
@@ -107,16 +106,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Luftklappe
-    second: {fileID: 2100000, guid: 279b85ce131593e4390ae3ce0408e173, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Luftklappe_MEC
-    second: {fileID: 2100000, guid: 002868a68cd6e5b499064a2f65522dc4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: M_Metal_Stativ_Luftklappe
     second: {fileID: 2100000, guid: 1bbf4e6bac2e41447bccc3ccb53d3ca3, type: 2}
   - first:
@@ -129,6 +118,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_Rohr
     second: {fileID: 2100000, guid: 3300afa51d18bdf4eae21002bfeeb569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Rope
+    second: {fileID: 2100000, guid: d1ab8c63ec23cf64fbd03a926f15c567, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -163,7 +157,7 @@ ModelImporter:
     importMaterials: 1
     materialName: 1
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
