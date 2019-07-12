@@ -46,11 +46,6 @@ public class SteeringWheelCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger))
-        {
-            //grabbed = false;
-        }
-
         if (otherCollider != Vector3.zero && grabbed)
         {
             newVector = new Vector3(otherCollider.x - transform.position.x,
@@ -68,13 +63,17 @@ public class SteeringWheelCollider : MonoBehaviour
     {
         if (other.GetType() == typeof(SphereCollider))
         {
-            if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && !grabbed)
+            if (!ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger))
+            {
+                grabbed = false;
+                deltaAngle = 0f;
+
+            } else if (ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) && !grabbed)
             {
                 grabbed = true;
 
                 oldVector = new Vector3(otherCollider.x - transform.position.x,
                     otherCollider.y - transform.position.y, 0f).normalized;
-
             }
 
             otherCollider = other.transform.position;
@@ -89,6 +88,7 @@ public class SteeringWheelCollider : MonoBehaviour
         if (other.GetType() == typeof(SphereCollider))
         {
             grabbed = false;
+            deltaAngle = 0f;
         }
     }
 }

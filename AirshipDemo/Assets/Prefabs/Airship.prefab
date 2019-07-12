@@ -55,7 +55,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4182403121698752850}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -63,7 +63,7 @@ Transform:
   - {fileID: 7681888106775660817}
   m_Father: {fileID: 8228660637381258313}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &7254333105430522450
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -523,7 +523,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8228660638517748195}
-  - component: {fileID: 7739686838813827024}
   m_Layer: 0
   m_Name: SteeringWheel
   m_TagString: Untagged
@@ -546,44 +545,6 @@ Transform:
   m_Father: {fileID: 8228660637381258313}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7739686838813827024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8228660638517748192}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c1e088ce10ab7d4c87f03fd1f2dfcae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posOffset: {x: 0, y: 0, z: 0}
-  rotOffset: {x: 0, y: 0, z: 0}
-  alignPosition: 0
-  alignRotation: 0
-  alignPositionOffset: {x: 0, y: 0, z: 0}
-  alignRotationOffset: {x: 0, y: 0, z: 0}
-  m_followingDuration: 0.04
-  m_overrideMaxAngularVelocity: 1
-  m_unblockableGrab: 1
-  m_grabButton: 0
-  m_allowMultipleGrabbers: 1
-  m_afterGrabbed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_beforeRelease:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_onDrop:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &8228660638683207330
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,10 +710,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8411998428461654836}
     m_Modifications:
-    - target: {fileID: 100000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
-      propertyPath: m_Name
-      value: Luftklappensteuerung_prefab
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7073261
@@ -796,6 +753,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
+      propertyPath: m_Name
+      value: Luftklappensteuerung_prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
@@ -1604,10 +1565,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8228660637381258313}
     m_Modifications:
-    - target: {fileID: 100000, guid: 7216b708cf03f194bb44ffd0baaacf56, type: 3}
-      propertyPath: m_Name
-      value: Airship_prefab
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7216b708cf03f194bb44ffd0baaacf56, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1651,6 +1608,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 7216b708cf03f194bb44ffd0baaacf56, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7216b708cf03f194bb44ffd0baaacf56, type: 3}
+      propertyPath: m_Name
+      value: Airship_prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7216b708cf03f194bb44ffd0baaacf56, type: 3}
