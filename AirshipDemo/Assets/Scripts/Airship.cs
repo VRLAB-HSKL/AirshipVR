@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Airship : MonoBehaviour
 {
-
     [SerializeField]
     [Range(.2f, 1f)]
     float oscillationRange = .4f;
@@ -13,6 +12,10 @@ public class Airship : MonoBehaviour
     [Range(.04f, .1f)]
     float oscillationTime = .04f;
 
+    [SerializeField]
+    float eventRange = 20f;
+    [SerializeField]
+    float flightHeight = 50f;
 
     [SerializeField]
     [Range(0f, 2f)]
@@ -30,10 +33,19 @@ public class Airship : MonoBehaviour
     [Range(-2f, 2f)]
     float steer = 0;
 
-    [SerializeField] bool lift = false;
-    [SerializeField] bool fall = false;
+    [SerializeField]
+    bool lift = false;
+    [SerializeField]
+    bool fall = false;
 
-    [SerializeField] Transform balloon;
+    [SerializeField]
+    Transform balloon;
+
+    [SerializeField]
+    Oven oven;
+
+    [SerializeField]
+    Ventilation ventilation;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +64,12 @@ public class Airship : MonoBehaviour
         }
         transform.position += transform.forward * speedForward * Time.deltaTime;
 
+        if (!oven.NoFuel)
+        {
+            lift = oven.IsLifting;
+        }
+
+        fall = ventilation.IsFalling;
 
         if (lift && fall)
         {
@@ -63,11 +81,14 @@ public class Airship : MonoBehaviour
             if (lift)
             {
                 transform.position += new Vector3(0f, speedVertical * Time.deltaTime, 0f);
+                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight, flightHeight + eventRange), transform.position.z);
                 fall = false;
             }
             if (fall)
             {
                 transform.position -= new Vector3(0f, speedVertical * Time.deltaTime, 0f);
+                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight, flightHeight + eventRange), transform.position.z);
+
                 lift = false;
             }
         }
