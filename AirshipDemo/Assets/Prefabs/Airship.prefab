@@ -520,7 +520,7 @@ MonoBehaviour:
   actualHeight: 0
   scaleRange: 0.13
   percent: 0
-  offset: 50
+  offset: 60
 --- !u!1 &8228660637381258318
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +717,7 @@ MonoBehaviour:
   oscillationRange: 0.4
   oscillationTime: 0.04
   eventRange: 20
-  flightHeight: 50
+  flightHeight: 60
   speedForward: 2
   speedVertical: 1
   rotationSpeed: 0.1
@@ -725,7 +725,7 @@ MonoBehaviour:
   steer: 0
   lift: 0
   fall: 0
-  balloon: {fileID: 8228660637381258313}
+  ship: {fileID: 8228660637381258313}
   oven: {fileID: 566966913}
   ventilation: {fileID: 4102021367739180164}
 --- !u!1 &8228660638517748192

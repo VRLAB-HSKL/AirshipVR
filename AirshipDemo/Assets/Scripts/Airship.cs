@@ -39,7 +39,7 @@ public class Airship : MonoBehaviour
     bool fall = false;
 
     [SerializeField]
-    Transform balloon;
+    Transform ship;
 
     [SerializeField]
     Oven oven;
@@ -81,13 +81,13 @@ public class Airship : MonoBehaviour
             if (lift)
             {
                 transform.position += new Vector3(0f, speedVertical * Time.deltaTime, 0f);
-                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight, flightHeight + eventRange), transform.position.z);
+                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight - eventRange - (transform.position.y - ship.transform.position.y), flightHeight + eventRange), transform.position.z);
                 fall = false;
             }
             if (fall)
             {
                 transform.position -= new Vector3(0f, speedVertical * Time.deltaTime, 0f);
-                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight, flightHeight + eventRange), transform.position.z);
+                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight - eventRange - (transform.position.y - ship.transform.position.y), flightHeight + eventRange), transform.position.z);
 
                 lift = false;
             }
@@ -101,7 +101,7 @@ public class Airship : MonoBehaviour
 
     void Oscillate(float range)
     {
-        balloon.transform.localPosition = new Vector3(0f,
+        ship.transform.localPosition = new Vector3(0f,
             Mathf.PingPong(Time.time * oscillationTime, range),
             0f);
     }

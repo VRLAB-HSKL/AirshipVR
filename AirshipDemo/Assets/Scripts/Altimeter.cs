@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Altimeter : MonoBehaviour
 {
-    [SerializeField] Transform pointer;
+    [SerializeField]
+    Transform pointer;
+    [SerializeField]
+    Transform airship;
 
     [SerializeField]
     [Range(.001f, 20f)]
@@ -31,7 +34,8 @@ public class Altimeter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        actualHeight = Mathf.Clamp(transform.position.y, -eventRange + offset, eventRange + offset);
+        //actualHeight = Mathf.Clamp(transform.position.y, -eventRange + offset, eventRange + offset);
+        actualHeight = airship.transform.position.y;
 
         percent = (actualHeight - offset) / eventRange;
 
