@@ -113,7 +113,7 @@ public class Oven : MonoBehaviour
         if (other.gameObject.tag == "Fuel")
         {
             AddFuel();
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 }
