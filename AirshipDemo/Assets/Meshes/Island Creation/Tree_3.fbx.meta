@@ -3,20 +3,13 @@ guid: bfb45ce2f8d2a3b4fb0bf8651e9c8b6d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Leaves
-    100002: //RootNode
-    400000: Leaves
-    400002: //RootNode
+    100000: //RootNode
+    400000: //RootNode
     2100000: M_Tree
     2100002: M_Leaves
-    2300000: Leaves
-    2300002: //RootNode
-    3300000: Leaves
-    3300002: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Tree
-    4300002: Leaves
-    6400000: Leaves
-    6400002: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -27,12 +20,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: M_Tree
-    second: {fileID: 2100000, guid: 97bd53002bf392d4e9c55e14e65aa8c8, type: 2}
+    second: {fileID: 2100000, guid: 75d29cc686e893c42a6287208d713564, type: 2}
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -60,8 +53,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
-    useSRGBMaterialColor: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

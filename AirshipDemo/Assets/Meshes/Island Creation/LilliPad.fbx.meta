@@ -5,22 +5,33 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: M_LilliPad
+    2100000: M_Blossom
+    2100002: M_Outer_Leaves
+    2100004: M_Inner_Leaves
     2300000: //RootNode
     3300000: //RootNode
-    4300000: LiliPad
-    6400000: //RootNode
+    4300000: LilliPad
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_LilliPad
-    second: {fileID: 2100000, guid: 87cfedf983dcb4b40a7bccfb2fe3458e, type: 2}
+      name: M_Blossom
+    second: {fileID: 2100000, guid: 73469927a60032a43ac854beda42da71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Inner_Leaves
+    second: {fileID: 2100000, guid: ddfae95ec1c16ac458ab39a40cdd630b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Outer_Leaves
+    second: {fileID: 2100000, guid: 09ed8c7cb9ad2ac4f8573defb4777f59, type: 2}
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -48,7 +59,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
