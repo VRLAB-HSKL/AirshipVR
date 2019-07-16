@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloud: {fileID: 2328776469471314568}
-  velocityRange: {x: 10, y: 20}
+  velocityRange: {x: 1, y: 8}
 --- !u!1001 &2328776469471713288
 PrefabInstance:
   m_ObjectHideFlags: 0
