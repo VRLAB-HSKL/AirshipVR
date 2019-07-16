@@ -17,6 +17,9 @@ public class AirshipButton : MonoBehaviour
     Vector3 downPosition;
 
     [SerializeField]
+    ParticleSystem flames;
+
+    [SerializeField]
     float range = 0f;
 
     [SerializeField]
@@ -49,6 +52,7 @@ public class AirshipButton : MonoBehaviour
         else
         {
             button.transform.localPosition = upPosition;
+
         }
     }
 }
