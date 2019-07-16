@@ -20,7 +20,7 @@ public class FuelPool : MonoBehaviour
     float respawnRange = 10f;
 
     [SerializeField]
-    int respawnIntervall = 10;
+    int spawnIntervall = 10;
 
     [SerializeField]
     float timeToRespawn = 1f;
@@ -41,7 +41,7 @@ public class FuelPool : MonoBehaviour
     {
         foreach (GameObject obj in objects)
         {
-            if (!obj.activeInHierarchy && Time.realtimeSinceStartup%respawnIntervall <= timeToRespawn)
+            if (!obj.activeInHierarchy && Time.realtimeSinceStartup%spawnIntervall <= timeToRespawn)
             {
                 obj.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 obj.transform.position = transform.position + (Vector3.forward * distance);
