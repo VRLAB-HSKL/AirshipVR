@@ -245,7 +245,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1532708227619445455}
   - component: {fileID: 1918677658508311961}
-  - component: {fileID: 6564953858303821369}
   - component: {fileID: 4486355718014568441}
   m_Layer: 5
   m_Name: RadialProgressBar
@@ -282,19 +281,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239640853653101340}
   m_CullTransparentMesh: 0
---- !u!114 &6564953858303821369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239640853653101340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0cd33a5dc4694e45a003c60b194a048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Fillimage: {fileID: 1162073775194890562}
 --- !u!114 &4486355718014568441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,8 +293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89c47ed51093404da042222b881eda1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radialBar: {fileID: 6564953858303821369}
-  mTrueOrFalse: {fileID: 0}
+  radialBar: {fileID: 1162073775194890562}
+  mTrueOrFalse: {fileID: 8928386717845106140}
   loadingLabel: {fileID: 1181967059416669279}
 --- !u!1 &1847511510450110173
 GameObject:
@@ -5456,6 +5442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252f50bfc020a134aa4976a498577aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inStartScene: 1
 --- !u!1 &3084174089014784787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7592,10 +7579,9 @@ GameObject:
   - component: {fileID: 1107743463677140177}
   - component: {fileID: 6067875653534230880}
   - component: {fileID: 4678961284524178573}
-  - component: {fileID: 7128496684172568634}
   - component: {fileID: 5582825276532649016}
   m_Layer: 5
-  m_Name: Image
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7671,19 +7657,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5024662, y: 0.50240976, z: 0.65558505}
   m_Center: {x: -0.0015439987, y: 0.000005275011, z: -0.32550278}
---- !u!114 &7128496684172568634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7530830882702117212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0cd33a5dc4694e45a003c60b194a048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Fillimage: {fileID: 1162073775194890562}
 --- !u!114 &5582825276532649016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7696,7 +7669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89c47ed51093404da042222b881eda1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radialBar: {fileID: 7128496684172568634}
+  radialBar: {fileID: 1162073775194890562}
   mTrueOrFalse: {fileID: 8928386717845106140}
   loadingLabel: {fileID: 1181967059416669279}
 --- !u!1 &7783302629974311960
@@ -8431,15 +8404,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 199345dfdda84c54b8099427a0317e6b, type: 3}
---- !u!1 &4036580512204191584 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 199345dfdda84c54b8099427a0317e6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 4036580512204091840}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4036580512204483392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 199345dfdda84c54b8099427a0317e6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4036580512204091840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4036580512204191584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 199345dfdda84c54b8099427a0317e6b,
     type: 3}
   m_PrefabInstance: {fileID: 4036580512204091840}
   m_PrefabAsset: {fileID: 0}
