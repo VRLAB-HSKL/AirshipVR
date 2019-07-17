@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Ueberprueft ob der Button zum Aufsteigen des Luftschiffs gedrueckt wird, wenn ja aktiviere das Partikelsystem, welches am Brenner des Luftschiffs angebracht wurde.
+/// </summary>
 public class Flames : MonoBehaviour
 {
     [SerializeField]
