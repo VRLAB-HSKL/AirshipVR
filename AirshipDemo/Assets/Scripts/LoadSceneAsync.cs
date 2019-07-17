@@ -22,6 +22,7 @@ public class LoadSceneAsync : MonoBehaviour
 
     private bool isLoading = false;//Gibt an, ob im Moment eine Szene geladen wird.
 
+    public bool IsLoading { get => isLoading; set => isLoading = value; }
 
     private void Start()
     {
@@ -38,16 +39,16 @@ public class LoadSceneAsync : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if(other.gameObject.tag == "SceneGlobe" && !isLoading)//Es handelt sich bei dem GameObject um eine Schneekugel samt kleinem Modell. Außerdem wurde das Laden einer Szene noch nicht gestartet.
+        if(other.gameObject.tag == "SceneGlobe" && !IsLoading)//Es handelt sich bei dem GameObject um eine Schneekugel samt kleinem Modell. Außerdem wurde das Laden einer Szene noch nicht gestartet.
         {
-            isLoading = true;
+            IsLoading = true;
             mTrueOrFalse.startColor = Color.green;
             mTrueOrFalse.Play();
             sceneToLoad = other.gameObject.name;
             loadingLabel.text = "Loading " + other.gameObject.name + " Scenario";
             StartCoroutine(LoadAsyncScence());
         }
-        else if(other.gameObject.tag == "SceneGlobe" && isLoading)//Es handelt sich bei dem GameObject um eine Schneekugel, doch es wurde schon eine Szene geladen. Deswegen wird nichts ausgeführt!
+        else if(other.gameObject.tag == "SceneGlobe" && IsLoading)//Es handelt sich bei dem GameObject um eine Schneekugel, doch es wurde schon eine Szene geladen. Deswegen wird nichts ausgeführt!
         {
             return;
         }
@@ -65,7 +66,7 @@ public class LoadSceneAsync : MonoBehaviour
     /// <param name="other"> Das GameObject, dass den Collider verlässt.</param>
     private void OnTriggerExit(Collider other)
     {
-        if (isLoading)//Wenn eine Szene geladen wird wird nichts ausgeführt.
+        if (IsLoading)//Wenn eine Szene geladen wird wird nichts ausgeführt.
             return;
         else//Wenn nichts geladen wird, sich also auch keine Schneekugel auf der X-Stelle befindet, wird wieder der Standard Text des Labels angezeigt.
         {
