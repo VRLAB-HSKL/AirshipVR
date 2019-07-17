@@ -77,9 +77,6 @@ public class SteeringWheelCollider : MonoBehaviour
             }
 
             otherCollider = other.transform.position;
-
-
-
         }
     }
 

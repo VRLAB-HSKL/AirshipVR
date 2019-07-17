@@ -40,11 +40,12 @@ public class FuelPool : IObjectPool
             {
                 obj.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 obj.transform.position = transform.position + (Vector3.forward * spawnOffset);
+                obj.GetComponent<Fuel>().StartTimer = false;
                 obj.SetActive(true);
             }
             if (Vector3.Distance(obj.transform.position, transform.position) >= respawnRange)
             {
-                obj.SetActive(false);
+                obj.GetComponent<Fuel>().StartTimer = true;
             }
         }
     }
