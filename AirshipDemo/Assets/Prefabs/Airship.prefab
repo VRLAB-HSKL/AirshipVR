@@ -423,7 +423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda2d7f8e45f29d4c9c1271622ace88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledObjects: []
+  pooledObjects:
+  - {fileID: 4329929869959742218, guid: 6a3af404b8d4e1a48a0628f765241c53, type: 3}
   poolSize: 5
   isActive: 0
   objects:
@@ -433,8 +434,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   spawnOffset: 0.2
-  respawnRange: 5
-  spawnIntervall: 10
+  respawnRange: 10
+  spawnIntervall: 30
   timeToSpawn: 1
 --- !u!1 &1520925878
 GameObject:
@@ -1001,7 +1002,7 @@ MonoBehaviour:
   oscillationTime: 0.04
   eventRange: 20
   flightHeight: 60
-  speedForward: 0
+  speedForward: 2
   speedVertical: 1
   rotationSpeed: 0.1
   steeringWheel: {fileID: 1603190518}
@@ -1011,6 +1012,22 @@ MonoBehaviour:
   ship: {fileID: 8228660637381258313}
   oven: {fileID: 566966913}
   ventilation: {fileID: 4102021367739180164}
+--- !u!114 &1502810910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228660638462396988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8f249a127ef364e9003f56d0c38b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steeringWheel: {fileID: 1603190518}
+  minColor: {r: 0, g: 1, b: 0.22306561, a: 0}
+  maxColor: {r: 1, g: 0, b: 0, a: 0}
+  intensity: 0
 --- !u!1 &8228660638517748192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,6 +1458,18 @@ PrefabInstance:
       objectReference: {fileID: 7955318037330785871}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd7c66fc2465f65418c2724369dcee93, type: 3}
+--- !u!114 &6918533037393888530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6619780993556520950, guid: bd7c66fc2465f65418c2724369dcee93,
+    type: 3}
+  m_PrefabInstance: {fileID: 4313813585374173924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83525ba1ab881a4a98052283fd4b08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6918533038131839620 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6619780994429638752, guid: bd7c66fc2465f65418c2724369dcee93,
@@ -1459,18 +1488,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4313813585374173924}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6918533037393888530 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6619780993556520950, guid: bd7c66fc2465f65418c2724369dcee93,
-    type: 3}
-  m_PrefabInstance: {fileID: 4313813585374173924}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d83525ba1ab881a4a98052283fd4b08c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6918533037393888529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6619780993556520949, guid: bd7c66fc2465f65418c2724369dcee93,
@@ -1608,10 +1625,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ViveCameraRig
       objectReference: {fileID: 0}
-    - target: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1655,6 +1668,10 @@ PrefabInstance:
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_ForceIntoRT
@@ -2072,6 +2089,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64ce78de707cd1a4fbd54d7184ccd60f, type: 3}
+--- !u!1 &8228660638462396988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 64ce78de707cd1a4fbd54d7184ccd60f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8228660638462495900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8228660638619759280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2399,16 +2422,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1961987449951758112, guid: 020d6404de403c048907ad654eea2edc,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4644345496844533358, guid: 020d6404de403c048907ad654eea2edc,
         type: 3}
       propertyPath: button
       value: 
       objectReference: {fileID: 6928821858895404983}
+    - target: {fileID: 4644345496844533358, guid: 020d6404de403c048907ad654eea2edc,
+        type: 3}
+      propertyPath: flames
+      value: 
+      objectReference: {fileID: 7955318037330785871}
+    - target: {fileID: 1961987449951758112, guid: 020d6404de403c048907ad654eea2edc,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020d6404de403c048907ad654eea2edc, type: 3}
 --- !u!198 &7955318037330785871 stripped

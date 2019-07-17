@@ -27,7 +27,8 @@ public class FuelPool : IObjectPool
 
         for (int i = 0; i < objects.Length; i++)
         {
-            objects[i] = Instantiate(pooledObjects[Random.Range(0, pooledObjects.Length)], transform.position + (Vector3.up * i * spawnOffset), Quaternion.Euler(0f, 0f, 0f));
+            objects[i] = Instantiate(pooledObjects[Random.Range(0, pooledObjects.Length)], transform);
+            objects[i].transform.position = transform.position + (Vector3.up * i * spawnOffset);
         }
     }
 

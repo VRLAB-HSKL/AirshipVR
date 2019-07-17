@@ -14,6 +14,7 @@ public class SteeringWheel : MonoBehaviour
     float maxAngle = 720f;
 
     [SerializeField]
+    [Range(-2f, 2f)]
     float steeringValue = 0f;
 
     public float GetSteeringValue
