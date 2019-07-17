@@ -17,7 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainWithIsles.unity
     guid: aed025c911271bd41ab724c5bdee888e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MainWithoutIsles.unity
-    guid: 9c6db8da2bb61a24eb74de381a2163b8
+    guid: 24eba72a2471e52418117585a2bf9806
   m_configObjects: {}
