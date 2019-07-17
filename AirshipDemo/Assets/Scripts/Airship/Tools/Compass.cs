@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Zeigt auf den Mittelpunkt der Welt. 
+/// </summary>
 public class Compass : MonoBehaviour
 {
-    [SerializeField]
-    Transform target;
+    [SerializeField] Transform target;
 
     void Update()
     {

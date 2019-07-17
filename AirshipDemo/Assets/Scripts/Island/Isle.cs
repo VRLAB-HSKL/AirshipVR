@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Steuert die Bewegung einer Isle.
+/// </summary>
 public class Isle : MonoBehaviour
 {
     Vector3 originalPosition;

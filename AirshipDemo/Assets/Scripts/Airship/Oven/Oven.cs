@@ -1,19 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Stellt den Tank fuer das Airship zur Verfuegung.
+/// </summary>
 public class Oven : MonoBehaviour
 {
-    [SerializeField]
-    AirshipButton button;
+    [SerializeField] AirshipButton button;
 
+    [SerializeField] float maxFuel = 2000;
+    [SerializeField] float fuelValue = 500;
     [SerializeField]
-    float maxFuel = 2000;
+    [Range(20f, 100f)] float fuelBurnDecay = 20f;
+    [SerializeField]
+    [Range(0f, 2f)] float fuelDecay = 2f;
 
-    [SerializeField]
     float actualFuel = 2000;
 
-    [SerializeField]
     float fuelPercentage;
 
     public float FuelPercentage
@@ -24,7 +26,6 @@ public class Oven : MonoBehaviour
         }
     }
 
-    [SerializeField]
     bool lift = false;
 
     public bool IsLifting
@@ -35,18 +36,6 @@ public class Oven : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    float fuelValue = 500;
-
-    [SerializeField]
-    [Range(20f, 100f)]
-    float fuelBurnDecay = 20f;
-
-    [SerializeField]
-    [Range(0f, 2f)]
-    float fuelDecay = 2f;
-
-    [SerializeField]
     bool noFuel = false;
 
     public bool NoFuel

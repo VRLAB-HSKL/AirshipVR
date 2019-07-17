@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Stellt den Interaktionsbereich fuer einen AirshipButton zur Verfuegung.
+/// </summary>
 public class AirshipButtonCollider : MonoBehaviour
 {
     bool pressed = false;

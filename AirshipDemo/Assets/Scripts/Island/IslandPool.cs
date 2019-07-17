@@ -1,12 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Anpassung eines IObjectPool an die Verwendung von Isle-GameObjects.
+/// </summary>
 public class IslandPool : IObjectPool
 {
     [SerializeField] float height = 60f;
+    // Grenzwert fuer die Hoehenunterschiede der Objekte
     [SerializeField] float eventRange = 20f;
+    // Entfernung, in der Objekte spawnen
     [SerializeField] Vector2 spawnRange = new Vector2(60f, 700f);
+    // Abstand zwischen zwei Objekten
     [SerializeField] float tolerance = 20f;
 
     [SerializeField] Transform player;

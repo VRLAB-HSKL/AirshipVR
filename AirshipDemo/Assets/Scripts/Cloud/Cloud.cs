@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Legt Ausrichtung und Geschwindigkeit einer Cloud fest.
+/// </summary>
 public class Cloud : MonoBehaviour
 {
     [SerializeField] Transform cloud;

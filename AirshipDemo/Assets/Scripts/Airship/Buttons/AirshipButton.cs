@@ -1,28 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Stellt die Funktionalitaet eines Buttons zur Verfuefung
+/// </summary>
 public class AirshipButton : MonoBehaviour
 {
-    [SerializeField]
-    Transform button;
+    // Beweglicher Teil eines Buttons
+    [SerializeField] Transform button;
+    // Interaktionsbereich
+    [SerializeField] AirshipButtonCollider collider;
+    [SerializeField] ParticleSystem flames;
 
-    [SerializeField]
-    AirshipButtonCollider collider;
-
-    [SerializeField]
     Vector3 upPosition;
-
-    [SerializeField]
     Vector3 downPosition;
 
-    [SerializeField]
-    ParticleSystem flames;
+    float range = 0.04f;
 
-    [SerializeField]
-    float range = 0f;
-
-    [SerializeField]
     bool pressed = false;
 
     public bool IsPressed
@@ -33,14 +26,12 @@ public class AirshipButton : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         upPosition = button.transform.localPosition;
         downPosition = button.transform.localPosition - Vector3.up * range;
     }
 
-    // Update is called once per frame
     void Update()
     {
         pressed = collider.IsPressed;

@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Interpoliert zwischen zwei Farben eines Materials.
+/// </summary>
 public class ColorLerper : MonoBehaviour
 {
     [SerializeField] SteeringWheel steeringWheel;
@@ -22,7 +23,7 @@ public class ColorLerper : MonoBehaviour
 
     void Update()
     {
-        //GetIntensity();
+        GetIntensity();
 
         intensity = Mathf.Clamp(intensity, 0f, 1f);
         renderer.material.color = Color.Lerp(minColor, maxColor, intensity);

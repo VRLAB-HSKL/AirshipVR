@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Anpassung eines IObjectPool an die Verwendung von Fuel-GameObjects.
+/// </summary>
 public class FuelPool : IObjectPool
 {
-    [SerializeField]
-    float spawnOffset = .2f;
+    // Abstand zwischen den Objekten
+    [SerializeField] float spawnOffset = .2f;
+    [SerializeField] float respawnRange = 10f;
+    // Zeitraum, in dem Objekte spawnen koennen
+    [SerializeField] float timeToSpawn = 1f;
 
-    [SerializeField]
-    float respawnRange = 10f;
-
-    [SerializeField]
-    int spawnIntervall = 10;
-
-    [SerializeField]
-    float timeToSpawn = 1f;
+    // Dauer eines Intervalls
+    [SerializeField] int spawnIntervall = 30;
 
     void Start()
     {
@@ -36,6 +34,7 @@ public class FuelPool : IObjectPool
     {
         foreach (GameObject obj in objects)
         {
+            // Am Ende jedes Intervalls werden timeToSpawn Sekunden lang nicht aktive Objekte gespawnt (neu positioniert und aktiviert)
             if (!obj.activeInHierarchy && Time.realtimeSinceStartup%spawnIntervall <= timeToSpawn)
             {
                 obj.GetComponent<Rigidbody>().velocity = Vector3.zero;

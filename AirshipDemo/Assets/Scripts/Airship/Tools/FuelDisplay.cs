@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Gibt den Tankinhalt an. Ofen fungiert als Tank.
+/// </summary>
 public class FuelDisplay : MonoBehaviour
 {
-    [SerializeField]
-    Oven oven;
+    [SerializeField] Oven oven;
 
-    [SerializeField]
-    [Range(0f, 1f)]
     float fuelPercentage = 1f;
 
     float maxAngle = 180;

@@ -1,17 +1,13 @@
 ﻿using HTC.UnityPlugin.Vive;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Berechnet anhand einer Kollision die Winkelaenderung fuer das SteeringWheel.
+/// </summary>
 public class SteeringWheelCollider : MonoBehaviour
 {
-    [SerializeField]
     Vector3 otherCollider;
 
-    [SerializeField]
-    float offsetAngle;
-
-    [SerializeField]
     float deltaAngle = 0f;
 
     public float GetDeltaAngle
@@ -22,28 +18,19 @@ public class SteeringWheelCollider : MonoBehaviour
         }
     }
 
-    [SerializeField]
     float actualAngle = 0f;
 
-    [SerializeField]
-    Vector3 startVector;
-
-    [SerializeField]
     Vector3 oldVector;
 
-    [SerializeField]
     Vector3 newVector;
 
-    [SerializeField]
     bool grabbed = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         oldVector = Vector3.up;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (otherCollider != Vector3.zero && grabbed)

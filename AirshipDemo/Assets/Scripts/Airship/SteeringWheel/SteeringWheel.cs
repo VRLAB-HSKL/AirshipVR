@@ -1,20 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Verwendet den Differenzwinkel von einem SteeringWheelCollider, um den neuen Winkel fuer das Steuerrad zu berechnen und dieses auszurichten.
+/// Liefert einen Wert fuer das Airship, der dessen Rotationsgeschwindigkeit beeinflusst.
+/// </summary>
 public class SteeringWheel : MonoBehaviour
 {
-    [SerializeField]
-    SteeringWheelCollider collider;
+    [SerializeField] new SteeringWheelCollider collider;
 
-    [SerializeField]
+    [SerializeField] float maxAngle = 720f;
+
     float actualAngle = 0f;
-
-    [SerializeField]
-    float maxAngle = 720f;
-
-    [SerializeField]
-    [Range(-2f, 2f)]
     float steeringValue = 0f;
 
     public float GetSteeringValue
@@ -25,13 +21,6 @@ public class SteeringWheel : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (collider.GetDeltaAngle != 0f
@@ -47,12 +36,10 @@ public class SteeringWheel : MonoBehaviour
             if (actualAngle < 0)
             {
                 actualAngle = -maxAngle;
-                // rumble
             }
             else
             {
                 actualAngle = maxAngle;
-                // rumble
             }
         }
 

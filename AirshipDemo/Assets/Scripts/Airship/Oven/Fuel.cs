@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Deaktiviert das dazugehoerige GameObject. Wird in der FuelPool-Klasse verwendet.
+/// </summary>
 public class Fuel : MonoBehaviour
 {
     [SerializeField]

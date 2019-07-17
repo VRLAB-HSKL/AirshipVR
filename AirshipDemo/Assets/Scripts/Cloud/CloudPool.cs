@@ -1,11 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Anpassung eines IObjectPool an die Verwendung von Cloud-GameObjects.
+/// </summary>
 public class CloudPool : IObjectPool
 {
+    // Abstand vom Boden
     [SerializeField] float height = 60f;
+    // Grenzwert fuer die Hoehenunterschiede der Objekte
     [SerializeField] float eventRange = 40f;
+    // Entfernung, in der Objekte spawnen
     [SerializeField] float spawnRange = 700f;
 
     [SerializeField] Transform player;
