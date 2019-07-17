@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76251032b8f973647b32077cdf654c11
+guid: 7216b708cf03f194bb44ffd0baaacf56
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -13,10 +13,10 @@ ModelImporter:
     2100010: M_Wand
     2100012: "M_T\xFCr"
     2100014: "M_T\xFCrknopf"
-    2100016: M_KohleKorb
-    2100018: M_Ofen
-    2100020: M_Rohr
-    2100022: M_Schrauben
+    2100016: M_Ofen
+    2100018: M_Rohr
+    2100020: M_Schrauben
+    2100022: M_Rope
     2100024: M_Brennerfundament
     2100026: M_Brenner_Gehauese
     2100028: M_Brenner_Unterseite
@@ -33,6 +33,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Hidavig
+    6400000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -97,11 +98,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_KohleKorb
-    second: {fileID: 2100000, guid: ca60f5b8f904b3145b2ec008f6acbe4a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: M_Korb
     second: {fileID: 2100000, guid: d9cd8be3b2e47e2408e03cc32dae6e8f, type: 2}
   - first:
@@ -129,6 +125,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_Rohr
     second: {fileID: 2100000, guid: 3300afa51d18bdf4eae21002bfeeb569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Rope
+    second: {fileID: 2100000, guid: d1ab8c63ec23cf64fbd03a926f15c567, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -161,7 +162,7 @@ ModelImporter:
     second: {fileID: 2100000, guid: e1d23917133f18841af1ebce763686d3, type: 2}
   materials:
     importMaterials: 1
-    materialName: 1
+    materialName: 0
     materialSearch: 1
     materialLocation: 1
   animations:
@@ -191,7 +192,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
