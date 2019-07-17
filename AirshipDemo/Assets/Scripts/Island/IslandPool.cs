@@ -43,13 +43,25 @@ public class IslandPool : IObjectPool
                 {
                     obj.transform.position = GetPosition();
                     obj.SetActive(true);
-                }
-                if (Vector3.Distance(obj.transform.position, player.position) >= spawnRange.y + 1)
+                }else if (Vector3.Distance(obj.transform.position, player.position) >= spawnRange.y + 1)
                 {
                     obj.SetActive(false);
                 }
             }
         }
+    }
+
+    bool CheckPosition(GameObject obj)
+    {
+        bool validRange = true;
+
+        foreach (GameObject objs in objects)
+        {
+            if (Vector3.Distance(objs.transform.position, obj.transform.position) <= tolerance)
+                return false;
+        }
+
+        return validRange;
     }
 
     bool IsInValidRange(Vector3 position)
@@ -74,7 +86,7 @@ public class IslandPool : IObjectPool
         {
             float randomAngle = Random.Range(0f, 360f) * Mathf.Deg2Rad;
 
-            Vector3 v = new Vector3(Mathf.Sin(randomAngle) * spawnRange.y, Random.Range(-eventRange, eventRange), Mathf.Cos(randomAngle) * spawnRange.y);
+            Vector3 v = new Vector3(Mathf.Sin(randomAngle) * spawnRange.y - 1, Random.Range(-eventRange, eventRange), Mathf.Cos(randomAngle) * spawnRange.y - 1);
 
             newPosition = v + player.position;
 
@@ -89,7 +101,7 @@ public class IslandPool : IObjectPool
 
         float randomAngle = Random.Range(0f, 360f) * Mathf.Deg2Rad;
 
-        Vector3 v = new Vector3(Mathf.Sin(randomAngle) * Random.Range(spawnRange.x, spawnRange.y), Random.Range(-eventRange, eventRange), Mathf.Cos(randomAngle) * Random.Range(spawnRange.x, spawnRange.y));
+        Vector3 v = new Vector3(Mathf.Sin(randomAngle) * Random.Range(spawnRange.x, spawnRange.y - 1), Random.Range(-eventRange, eventRange), Mathf.Cos(randomAngle) * Random.Range(spawnRange.x, spawnRange.y - 1));
 
         newPosition = v + player.position;
 

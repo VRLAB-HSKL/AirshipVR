@@ -32,6 +32,16 @@ public class Isle : MonoBehaviour
         OscillateRotation();
     }
 
+    void OnDisable()
+    {
+        originalPosition = Vector3.zero;
+    }
+
+    void OnEnable()
+    {
+        originalPosition = transform.position;
+    }
+
     void OscillatePosition()
     {
         Vector3 up = originalPosition + Vector3.up * Mathf.PingPong(Time.time * oscillationTime, xOscillation);

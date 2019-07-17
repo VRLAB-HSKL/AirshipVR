@@ -75,6 +75,7 @@ public class SteeringWheelCollider : MonoBehaviour
         {
             grabbed = false;
             deltaAngle = 0f;
+            otherCollider = Vector3.zero;
         }
     }
 }

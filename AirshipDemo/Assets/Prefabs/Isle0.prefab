@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537036331494459857}
   - component: {fileID: 2034630969440845437}
+  - component: {fileID: 6595279839513754082}
   m_Layer: 0
   m_Name: Isle0
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537036331494459856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.105534, y: 182.12587, z: -27.37579}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1537036330096906824}
@@ -44,6 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3338be70edae9489130f62802fa1fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6595279839513754082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537036331494459856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 35.3, y: 50.36, z: 33.26}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1537036330680066958
 PrefabInstance:
   m_ObjectHideFlags: 0
