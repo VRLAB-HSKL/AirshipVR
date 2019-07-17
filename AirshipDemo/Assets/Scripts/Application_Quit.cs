@@ -31,10 +31,10 @@ public class Application_Quit : MonoBehaviour
         }
         else//Der Benutzer befindet sich gerade in der "Main" Szene und möchte wieder zurück zur "Start" Anwendung.
         {
-            Debug.Log("I´m here");
+            
             if (other.GetType() == typeof(SphereCollider))//Handelt es sich um den SphereCollider eines Vive Controllers?
             {
-                Debug.Log("I´m an Controller");
+                
                 if (ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) || ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger))//Wenn ja wurde ein Trigger von einem der beiden Controller getätigt.
                 {
                     StartCoroutine(LoadAsyncScene());
