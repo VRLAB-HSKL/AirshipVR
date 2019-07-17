@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.80007, y: -48.3}
+  m_AnchoredPosition: {x: -32.80007, y: -62.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1156569272310451241
@@ -5375,7 +5375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.2, y: -11.9}
+  m_AnchoredPosition: {x: -24.2, y: -22.4}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7330660057937606980
@@ -6768,7 +6768,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Um den Ofen mit Treibstoff zu versorgen, muss Kohle in die \xD6ffnung des
     Ofens platziert werden.\nDie Kohle befindet sich direkt neben dem Ofen in einem
-    Spender."
+    Spender.\nDer Spender wird immer automatisch mit Kohle versorgt."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6837,12 +6837,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5621819563332809490}
-    characterCount: 158
+    characterCount: 213
     spriteCount: 0
-    spaceCount: 26
-    wordCount: 27
+    spaceCount: 34
+    wordCount: 35
     linkCount: 0
-    lineCount: 7
+    lineCount: 9
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -6929,7 +6929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -85.2}
+  m_AnchoredPosition: {x: 0, y: -102.6}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6200628459030319266
@@ -6963,7 +6963,8 @@ MonoBehaviour:
   m_text: "Das Steuerrad kann durch das Ausw\xE4hlen mit Hilfe des Controllers gesteuerten
     werden. Dabei ist zu beachten, dass der steuerbare Bereich im \xE4u\xDFerem Rand
     des Steuerrads liegt. Es kann nur mit einem Controller gleichzeitig gesteuert
-    werden."
+    werden. Leuchtet die im Steuerrad platzierte Leuchte rot auf, so kann das Steuerrad
+    nicht mehr in die eingeschlagene Richtung gedreht werden."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7009,7 +7010,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 356
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -7032,12 +7033,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3072628067811982329}
-    characterCount: 237
+    characterCount: 371
     spriteCount: 0
-    spaceCount: 34
-    wordCount: 35
+    spaceCount: 54
+    wordCount: 55
     linkCount: 0
-    lineCount: 8
+    lineCount: 13
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0

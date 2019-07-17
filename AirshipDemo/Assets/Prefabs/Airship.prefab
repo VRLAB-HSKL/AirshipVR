@@ -1525,6 +1525,11 @@ PrefabInstance:
       propertyPath: CollisionModule.type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5925022678660257664, guid: 8edef2f97beee39439545549bbb4601d,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8edef2f97beee39439545549bbb4601d, type: 3}
 --- !u!4 &8558106648451182585 stripped
@@ -2715,6 +2720,11 @@ PrefabInstance:
       propertyPath: flames
       value: 
       objectReference: {fileID: 7955318037330785871}
+    - target: {fileID: 4644345496844533358, guid: 020d6404de403c048907ad654eea2edc,
+        type: 3}
+      propertyPath: button_up
+      value: 
+      objectReference: {fileID: 6928821860304017441}
     - target: {fileID: 1961987449951758112, guid: 020d6404de403c048907ad654eea2edc,
         type: 3}
       propertyPath: moveWithTransform

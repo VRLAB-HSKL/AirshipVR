@@ -5,14 +5,11 @@ using UnityEngine;
 public class Flames : MonoBehaviour
 {
     [SerializeField]
-    AirshipButton button;
+    AirshipButtonCollider button_up;
 
     [SerializeField]
     bool risingup = false;
-
-    [SerializeField]
-    ParticleSystem flames;
-
+    private ParticleSystem flames;
     public bool IsRisingUp
     {
         get
@@ -20,11 +17,14 @@ public class Flames : MonoBehaviour
             return risingup;
         }
     }
-
+    private void Start()
+    {
+        flames = this.gameObject.GetComponent<ParticleSystem>();
+    }
     // Update is called once per frame
     void Update()
     {
-        risingup = button.IsPressed;
+        risingup = button_up.IsPressed;
 
         if (risingup)
         {
