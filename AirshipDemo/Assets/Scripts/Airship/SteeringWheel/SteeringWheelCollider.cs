@@ -50,12 +50,14 @@ public class SteeringWheelCollider : MonoBehaviour
     {
         if (other.GetType() == typeof(SphereCollider))
         {
-            if (!ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger))
+            bool triggerPressed = ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger);
+
+            if (!triggerPressed)
             {
                 grabbed = false;
                 deltaAngle = 0f;
 
-            } else if (ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) && !grabbed)
+            } else if (triggerPressed && !grabbed)
             {
                 grabbed = true;
 

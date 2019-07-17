@@ -48,10 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 6619780994092952988}
   collider: {fileID: 6619780994429638752}
-  upPosition: {x: 0, y: 0, z: 0}
-  downPosition: {x: 0, y: 0, z: 0}
-  range: 0.04
-  pressed: 0
+  flames: {fileID: 0}
 --- !u!1 &6619780994429638757
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +58,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6619780994429638758}
-  - component: {fileID: 6619780994429638759}
   - component: {fileID: 6619780994429638752}
   m_Layer: 0
   m_Name: Collider
@@ -84,20 +80,6 @@ Transform:
   m_Father: {fileID: 6619780993556520949}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &6619780994429638759
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6619780994429638757}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 5204f5b243751794fbbf623330108328, type: 3}
 --- !u!114 &6619780994429638752
 MonoBehaviour:
   m_ObjectHideFlags: 0
