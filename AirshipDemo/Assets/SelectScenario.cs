@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SelectScenario : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class SelectScenario : MonoBehaviour
     ArrowCollider LeftArrow;
     [SerializeField]
     ArrowCollider RightArrow;
+    [SerializeField]
+    TextMeshProUGUI label;
     private Vector3 startPosition;
     private int actualGameObject;
     // Start is called before the first frame update
@@ -24,6 +27,7 @@ public class SelectScenario : MonoBehaviour
                 globes[i].SetActive(true);
                 startPosition = globes[i].transform.position;
                 actualGameObject = i;
+                label.text = globes[i].name;
             }
             else
             {
@@ -61,6 +65,7 @@ public class SelectScenario : MonoBehaviour
                         if(i == actualGameObject)
                         {
                             globes[i].SetActive(true);
+                            label.text = globes[i].name;
 
                         }
                         else
@@ -82,6 +87,7 @@ public class SelectScenario : MonoBehaviour
                         if (i == actualGameObject)
                         {
                             globes[i].SetActive(true);
+                            label.text = globes[i].name;
 
                         }
                         else

@@ -159,13 +159,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 6928821858895404983}
   maxFuel: 2000
-  actualFuel: 1000
-  fuelPercentage: 0
-  lift: 0
   fuelValue: 200
   fuelBurnDecay: 45
   fuelDecay: 2
-  noFuel: 0
 --- !u!1 &809333422
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,9 +294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 6918533037393888530}
-  fall: 0
   hatch: {fileID: 2825591516073399154}
-  range: {x: 0, y: 90}
+  angleRange: {x: 0, y: 90}
 --- !u!1 &1125063056
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +430,7 @@ MonoBehaviour:
   pooledObjects:
   - {fileID: 4329929869959742218, guid: 6a3af404b8d4e1a48a0628f765241c53, type: 3}
   poolSize: 5
-  isActive: 0
+  activeAtInstantiation: 0
   objects:
   - {fileID: 0}
   - {fileID: 0}
@@ -444,8 +439,8 @@ MonoBehaviour:
   - {fileID: 0}
   spawnOffset: 0.2
   respawnRange: 10
-  spawnIntervall: 30
   timeToSpawn: 1
+  spawnIntervall: 30
 --- !u!1 &1520925878
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,14 +699,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9513931b4f7a2a348bd2582637ec9321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherCollider: {x: 0, y: 0, z: 0}
-  offsetAngle: 0
-  deltaAngle: 0
-  actualAngle: 0
-  startVector: {x: 0, y: 0, z: 0}
-  oldVector: {x: 0, y: 0, z: 0}
-  newVector: {x: 0, y: 0, z: 0}
-  grabbed: 0
 --- !u!1 &8228660636955053188
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oven: {fileID: 566966913}
-  fuelPercentage: 0
 --- !u!1 &8228660637032299232
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,9 +792,7 @@ MonoBehaviour:
   pointer: {fileID: 8228660638134656394}
   airship: {fileID: 8228660638330980151}
   eventRange: 20
-  actualHeight: 0
   scaleRange: 0.13
-  percent: 0
   offset: 60
 --- !u!1 &8228660637381258318
 GameObject:
@@ -1008,6 +992,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a464cb8bc5ecb4f9a6c38c85dc67a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steeringWheel: {fileID: 1603190518}
+  ship: {fileID: 8228660637381258313}
+  oven: {fileID: 566966913}
+  ventilation: {fileID: 4102021367739180164}
   oscillationRange: 0.4
   oscillationTime: 0.04
   eventRange: 20
@@ -1015,13 +1003,6 @@ MonoBehaviour:
   speedForward: 2
   speedVertical: 1
   rotationSpeed: 0.1
-  steeringWheel: {fileID: 1603190518}
-  steer: 0
-  lift: 0
-  fall: 0
-  ship: {fileID: 8228660637381258313}
-  oven: {fileID: 566966913}
-  ventilation: {fileID: 4102021367739180164}
 --- !u!114 &1502810910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,9 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 82563486}
-  actualAngle: 0
   maxAngle: 720
-  steeringValue: 0
 --- !u!1 &8228660638683207330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,11 +1625,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 566966911}
     m_Modifications:
-    - target: {fileID: 5836320316439012324, guid: 8edef2f97beee39439545549bbb4601d,
-        type: 3}
-      propertyPath: m_Name
-      value: FlamesParticleEffect
-      objectReference: {fileID: 0}
     - target: {fileID: 5830770181889653134, guid: 8edef2f97beee39439545549bbb4601d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,6 +1694,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836320316439012324, guid: 8edef2f97beee39439545549bbb4601d,
+        type: 3}
+      propertyPath: m_Name
+      value: FlamesParticleEffect
       objectReference: {fileID: 0}
     - target: {fileID: 5925022678660257664, guid: 8edef2f97beee39439545549bbb4601d,
         type: 3}
@@ -1794,15 +1773,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf9968b763fcb4841bb8300239a3c5aa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2361,10 +2340,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6826745959204263682}
     m_Modifications:
-    - target: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_Name
-      value: ViveCameraRig
-      objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2408,6 +2383,10 @@ PrefabInstance:
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_Name
+      value: ViveCameraRig
       objectReference: {fileID: 0}
     - target: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_Layer
@@ -2492,6 +2471,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 40d32595139aa5148aa06a5e3c01c892, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b7e185656ba0b38438410d19105c53fa, type: 2}
     - target: {fileID: 6400000, guid: 40d32595139aa5148aa06a5e3c01c892, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -2500,10 +2483,6 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 40d32595139aa5148aa06a5e3c01c892, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b7e185656ba0b38438410d19105c53fa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40d32595139aa5148aa06a5e3c01c892, type: 3}
 --- !u!4 &8228660636945903851 stripped
@@ -3102,11 +3081,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8228660637381258313}
     m_Modifications:
-    - target: {fileID: 1839301839748221536, guid: 020d6404de403c048907ad654eea2edc,
-        type: 3}
-      propertyPath: m_Name
-      value: Flames
-      objectReference: {fileID: 0}
     - target: {fileID: 1840629995517126346, guid: 020d6404de403c048907ad654eea2edc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3162,6 +3136,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1839301839748221536, guid: 020d6404de403c048907ad654eea2edc,
+        type: 3}
+      propertyPath: m_Name
+      value: Flames
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961987449951758112, guid: 020d6404de403c048907ad654eea2edc,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4644345496844533358, guid: 020d6404de403c048907ad654eea2edc,
         type: 3}
       propertyPath: button
@@ -3172,11 +3156,6 @@ PrefabInstance:
       propertyPath: flames
       value: 
       objectReference: {fileID: 7955318037330785871}
-    - target: {fileID: 1961987449951758112, guid: 020d6404de403c048907ad654eea2edc,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020d6404de403c048907ad654eea2edc, type: 3}
 --- !u!198 &7955318037330785871 stripped
