@@ -11,6 +11,8 @@ public class IslandPool : IObjectPool
 
     [SerializeField] Transform player;
 
+    [SerializeField] bool spawnIslands = true;
+
     public override void InitializePool()
     {
         objects = new GameObject[poolSize];
@@ -23,21 +25,25 @@ public class IslandPool : IObjectPool
 
     void Start()
     {
-        InitializePool();
+        if(spawnIslands)
+            InitializePool();
     }
 
     void Update()
     {
-        foreach (GameObject obj in objects)
+        if (spawnIslands)
         {
-            if (!obj.activeInHierarchy)
+            foreach (GameObject obj in objects)
             {
-                obj.transform.position = GetPosition();
-                obj.SetActive(true);
-            }
-            if (Vector3.Distance(obj.transform.position, player.position) >= spawnRange.y + 1)
-            {
-                obj.SetActive(false);
+                if (!obj.activeInHierarchy)
+                {
+                    obj.transform.position = GetPosition();
+                    obj.SetActive(true);
+                }
+                if (Vector3.Distance(obj.transform.position, player.position) >= spawnRange.y + 1)
+                {
+                    obj.SetActive(false);
+                }
             }
         }
     }
