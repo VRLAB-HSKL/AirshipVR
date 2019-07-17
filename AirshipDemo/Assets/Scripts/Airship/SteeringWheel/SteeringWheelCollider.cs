@@ -18,8 +18,6 @@ public class SteeringWheelCollider : MonoBehaviour
         }
     }
 
-    float actualAngle = 0f;
-
     Vector3 oldVector;
 
     Vector3 newVector;
@@ -31,7 +29,7 @@ public class SteeringWheelCollider : MonoBehaviour
         oldVector = Vector3.up;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (otherCollider != Vector3.zero && grabbed)
         {
@@ -39,8 +37,6 @@ public class SteeringWheelCollider : MonoBehaviour
             otherCollider.y - transform.position.y, 0f).normalized;
 
             deltaAngle = Vector3.SignedAngle(oldVector, newVector, Vector3.forward);
-
-            actualAngle += deltaAngle;
 
             oldVector = newVector;
         }
@@ -52,7 +48,7 @@ public class SteeringWheelCollider : MonoBehaviour
         {
             bool triggerPressed = ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger);
 
-            if (!triggerPressed)
+            if (!triggerPressed || Vector3.Distance(otherCollider, transform.position) < 1f)
             {
                 grabbed = false;
                 deltaAngle = 0f;

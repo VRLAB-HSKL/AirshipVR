@@ -10,6 +10,7 @@ public class SteeringWheel : MonoBehaviour
 
     [SerializeField] float maxAngle = 720f;
 
+    float oldAngle = 0f;
     float actualAngle = 0f;
     float steeringValue = 0f;
 
@@ -21,30 +22,43 @@ public class SteeringWheel : MonoBehaviour
         }
     }
 
-    void Update()
+    void LateUpdate()
     {
-        if (collider.GetDeltaAngle != 0f
-            && !(actualAngle + collider.GetDeltaAngle <= -maxAngle
-            || actualAngle + collider.GetDeltaAngle >= maxAngle))
+        float deltaAngle = collider.GetDeltaAngle;
+
+        if (deltaAngle < 10f)
         {
-            actualAngle += collider.GetDeltaAngle;
+            if (deltaAngle != 0f
+            && !(actualAngle + deltaAngle <= -maxAngle
+            || actualAngle + deltaAngle >= maxAngle))
+            {
+                actualAngle += deltaAngle;
+            }
+            else if (deltaAngle != 0f
+               && (actualAngle + deltaAngle <= -maxAngle
+               || actualAngle + deltaAngle >= maxAngle))
+            {
+                if (actualAngle < 0)
+                {
+                    actualAngle = -maxAngle;
+                }
+                else
+                {
+                    actualAngle = maxAngle;
+                }
+            }
         }
-        else if (collider.GetDeltaAngle != 0f
-           && (actualAngle + collider.GetDeltaAngle <= -maxAngle
-           || actualAngle + collider.GetDeltaAngle >= maxAngle))
+
+        // vermeidet zu grosse Spruenge
+        if (Mathf.Abs(actualAngle - oldAngle) > 10f)
         {
-            if (actualAngle < 0)
-            {
-                actualAngle = -maxAngle;
-            }
-            else
-            {
-                actualAngle = maxAngle;
-            }
+            actualAngle = oldAngle;
         }
 
         steeringValue = -actualAngle * (maxAngle / 360) / maxAngle;
 
         transform.localRotation = Quaternion.Euler(transform.localRotation.x, transform.localRotation.y, actualAngle);
+
+        oldAngle = actualAngle;
     }
 }
