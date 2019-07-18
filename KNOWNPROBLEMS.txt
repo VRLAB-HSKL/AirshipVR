@@ -24,8 +24,10 @@ Problem Collider, Fuel und Airship:
 	- Die Collision Detection der Rigidbodys kann angepasst werden, war hier jedoch nicht notwendig.
 	- Geschwindigkeit von Umgebung und Airship wurden angepasst.
 	- Fuel wird in Intervallen im Airship neu plaziert.
+
 Problem Asynchrones Laden:
-	- Nach dem Auswählen der Szene wird die Szene zwar im Hintergrund geladen, und danach aufgerufen, aber die Texturen der prozedualen Generierung werden nicht geladen.
+	- Nach dem Auswählen einer Szene wird dieses im Hintergrund geladen und danach aufgerufen, dabei werden die Texturen der prozedual generierten Welt nicht geladen.
+
 	Bisherige Lösung:
 	- Anstelle von SceneManager.LoadSceneAsync() wurde SceneManager.LoadScene() benutzt. Der kreisförmige Fortschrittsbalken wird also im Moment nicht genutzt, des Weiteren
-	kann der Benutzter sich während dem Laden der Szene nicht der "Start" Szene bewegen.
+	kann der Benutzter sich während dem Laden der Szene nicht in der "Start" Szene bewegen.
