@@ -661,7 +661,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5317201232308009805}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.05011104, y: 0.053541623, z: 0.21082214}
@@ -1813,6 +1813,11 @@ PrefabInstance:
       propertyPath: CollisionModule.type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5925022678660257664, guid: 8edef2f97beee39439545549bbb4601d,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8edef2f97beee39439545549bbb4601d, type: 3}
 --- !u!4 &8558106648451182585 stripped
@@ -2582,6 +2587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ViveCameraRig
       objectReference: {fileID: 0}
+    - target: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2625,10 +2634,6 @@ PrefabInstance:
     - target: {fileID: 463184, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
       propertyPath: m_ForceIntoRT
@@ -3323,7 +3328,7 @@ PrefabInstance:
     - target: {fileID: 1840629995517126346, guid: 020d6404de403c048907ad654eea2edc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.035000004
+      value: -0.068
       objectReference: {fileID: 0}
     - target: {fileID: 1840629995517126346, guid: 020d6404de403c048907ad654eea2edc,
         type: 3}
@@ -3365,16 +3370,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4644345496844533358, guid: 020d6404de403c048907ad654eea2edc,
-        type: 3}
-      propertyPath: button_up
-      value: 
-      objectReference: {fileID: 6928821860304017441}
     - target: {fileID: 1961987449951758112, guid: 020d6404de403c048907ad654eea2edc,
         type: 3}
       propertyPath: moveWithTransform
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4644345496844533358, guid: 020d6404de403c048907ad654eea2edc,
+        type: 3}
+      propertyPath: button_up
+      value: 
+      objectReference: {fileID: 6928821860304017441}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020d6404de403c048907ad654eea2edc, type: 3}
 --- !u!4 &7842928115977811877 stripped

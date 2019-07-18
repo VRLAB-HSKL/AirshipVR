@@ -12,3 +12,4 @@ Das Package Terrain des Projekts stammt von folgendem Repository:
 https://github.com/SebLague/Procedural-Landmass-Generation
 
 Das Package HTC.UnityPlugin des Projekts stammt aus dem Untiy AssetStore.
+Das Package EffectExamples des Projekt stammt aus dem Unity AssetStore und ist unter "Unity Particle Pack 5.x" zu finden.
