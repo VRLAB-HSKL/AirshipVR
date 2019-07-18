@@ -1,0 +1,33 @@
+Probleme Steuerrad:
+	- Es kann vorkommen, dass das Steuerrad anfängt zu "zittern". Sobald dies der Fall ist, wird dieses unvorhersagbar rotiert.
+	- Während der Simulator des HTC.UnityPlugins läuft, kann beispielsweise das Programm Discord (bei einer Bildschirmübertragung) 
+	die Interaktionsfähigkeit mit dem Steuerrad beeinflussen. Durch das resultierende "flackern" der Eingabe über die Maus wird ein zuvor erwähntes 
+	Zittern ausgelöst.
+
+	Lösungsansatz:
+	In den Skripten SteeringWheelCollider.cs und SteeringWheel.cs wurde Beschränkungen hinzugefügt, die mit "Feinabstimmung fuer Steuerrad" markiert wurden.
+	Somit konnte das Auftreten des Zitterns reduziert werden. Die genaue Ursache diesbezüglich wurde im Verlauf des Projekts nicht gefunden.
+
+Problem Inseln:
+	- Die Inseln die beim Start der Anwendung instantiiert werden, können miteinander kollidieren.
+
+	Bisherige Lösung:
+	- Abstandscheck
+
+Problem Collider, Fuel und Airship:
+	- Bei Kollisionen des Airships mit einem Collider, bei zu hoher Geschwindigkeit, werden alle im Airship enthaltenen Kollider beeinflusst. Somit kann
+	es vorkommen, dass die Kollision von Fuel (auf dem Airship) mit dem Airship nicht mehr registriert wird. 
+	- Bei zu hoher Geschwindigkeit kann es vorkommen, dass aufgrund der zu geringen Abtastrate der Collider, das Airship in das andere 
+	Objekt eindringt. In diesem Fall wird das Airship aus dem anderen Objekt geschleudert, sobald die Kollision registriert wird.
+	
+	Bisherige Lösung:
+	- Die Collision Detection der Rigidbodys kann angepasst werden, war hier jedoch nicht notwendig.
+	- Geschwindigkeit von Umgebung und Airship wurden angepasst.
+	- Fuel wird in Intervallen im Airship neu plaziert.
+
+Problem Asynchrones Laden:
+	- Nach dem Auswählen einer Szene wird dieses im Hintergrund geladen und danach aufgerufen, dabei werden die Texturen der prozedual generierten Welt nicht geladen.
+
+	Bisherige Lösung:
+	- Anstelle von SceneManager.LoadSceneAsync() wurde SceneManager.LoadScene() benutzt. Der kreisförmige Fortschrittsbalken wird also im Moment nicht genutzt, des Weiteren
+	kann der Benutzter sich während dem Laden der Szene nicht in der "Start" Szene bewegen.
