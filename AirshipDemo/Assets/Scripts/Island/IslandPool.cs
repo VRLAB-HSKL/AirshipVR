@@ -23,7 +23,16 @@ public class IslandPool : IObjectPool
 
         for (int i = 0; i < objects.Length; i++)
         {
-            objects[i] = Instantiate(pooledObjects[Random.Range(0, pooledObjects.Length)], InitializePosition(i), Quaternion.Euler(0f, Random.Range(0f, 360f), 0f));
+            objects[i] = Instantiate(pooledObjects[Random.Range(0, pooledObjects.Length)], InitializePosition(), Quaternion.Euler(0f, Random.Range(0f, 360f), 0f));
+        }
+
+        // Stellt den Abstand zwischen Inseln sicher
+        foreach (GameObject obj in objects)
+        {
+            if (CheckPosition(obj))
+            {
+                obj.transform.position = GetPosition();
+            }  
         }
     }
 
@@ -95,7 +104,7 @@ public class IslandPool : IObjectPool
         return newPosition;
     }
 
-    Vector3 InitializePosition(int position)
+    Vector3 InitializePosition()
     {
         Vector3 newPosition;
 

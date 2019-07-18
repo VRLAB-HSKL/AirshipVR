@@ -1,0 +1,33 @@
+Probleme Steuerrad:
+	- Es kann vorkommen, dass das Steuerrad während dem Lenken anfängt zu "zittern". Sobald dies der Fall ist, wird dieses u.a. bei erneuter Kollision von
+	Wand und Steuerrad, unvorhersagbar rotiert. Weiterhin ist es möglich, dass während des Zitterns die Rotationsrichtung der Steuerrads umgekehrt
+	wird und somit bei einer Bewegung des Wands im Uhrzeigersinn, das Steuerrad gegen den Uhrzeigersinn rotiert wird. 
+	- Während der Simulator des HTC.UnityPlugins läuft, kann beispielsweise das Programm Discord (bei einer Bildschirmübertragung) 
+	die Interaktionsfähigkeit mit dem Steuerrad beeinflussen. Durch das resultierende "flackern" der Eingabe über die Maus wird ein zuvor erwähntes 
+	Zittern ausgelöst.
+
+	Mögliche Ursachen:
+	- Physik in Unity (Collider)
+	- Simulator HTC.UnityPlugin
+	- Logikfehler
+
+	Lösungsansatz:
+	In den Skripten SteeringWheelCollider.cs und SteeringWheel.cs wurde Beschränkungen hinzugefügt, die mit "Feinabstimmung fuer Steuerrad" markiert wurden.
+	Somit konnte das Auftreten des Zitterns reduziert werden. Die genaue Ursache diesbezüglich wurde im Verlauf des Projekts nicht gefunden.
+
+Problem Inseln:
+	- Die Inseln die beim Start der Anwendung instantiiert werden, können miteinander kollidieren.
+
+	Lösung:
+	- Abstandscheck
+
+Problem Collider, Fuel und Airship:
+	- Bei Kollisionen des Airships mit einem Collider, bei zu hoher Geschwindigkeit, werden alle im Airship enthaltenen Kollider beeinflusst. Somit kann
+	es vorkommen, dass die Kollision von Fuel (auf dem Airship) mit dem Airship nicht mehr registriert wird. 
+	- Bei zu hoher Geschwindigkeit kann es vorkommen, dass aufgrund der zu geringen Abtastrate der Collider das Airship in das andere 
+	Objekt eindringt. In diesem Fall wird das Airship aus dem anderen Objekt geschleudert, sobald die Kollision registriert wird.
+	
+	Lösung:
+	- Die Collision Detection der Rigidbodys kann angepasst werden, war hier jedoch nicht notwendig.
+	- Geschwindigkeit von Umgebung und Airship wurden angepasst.
+	- Fuel wird in Intervallen im Airship neu plaziert.

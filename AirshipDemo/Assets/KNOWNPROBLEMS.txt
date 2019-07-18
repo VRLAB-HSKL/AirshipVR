@@ -6,12 +6,20 @@ Probleme Steuerrad:
 	die Interaktionsfähigkeit mit dem Steuerrad beeinflussen. Durch das resultierende "flackern" der Eingabe über die Maus wird ein zuvor erwähntes 
 	Zittern ausgelöst.
 
+	Mögliche Ursachen:
+	- Physik in Unity (Collider)
+	- Simulator HTC.UnityPlugin
+	- Logikfehler
+
 	Lösungsansatz:
 	In den Skripten SteeringWheelCollider.cs und SteeringWheel.cs wurde Beschränkungen hinzugefügt, die mit "Feinabstimmung fuer Steuerrad" markiert wurden.
 	Somit konnte das Auftreten des Zitterns reduziert werden. Die genaue Ursache diesbezüglich wurde im Verlauf des Projekts nicht gefunden.
 
 Problem Inseln:
 	- Die Inseln die beim Start der Anwendung instantiiert werden, können miteinander kollidieren.
+
+	Lösung:
+	- Abstandscheck
 
 Problem Collider, Fuel und Airship:
 	- Bei Kollisionen des Airships mit einem Collider, bei zu hoher Geschwindigkeit, werden alle im Airship enthaltenen Kollider beeinflusst. Somit kann
