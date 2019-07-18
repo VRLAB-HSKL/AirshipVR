@@ -48,7 +48,8 @@ public class SteeringWheelCollider : MonoBehaviour
         {
             bool triggerPressed = ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger);
 
-            if (!triggerPressed || Vector3.Distance(otherCollider, transform.position) < 1f)
+            // Zusaetzliche Einschraenkung des Interaktionsbereichs auf die Hoehe der Griffe des Steuerrads
+            if (!triggerPressed || Vector3.Distance(otherCollider, transform.position) < 1f || Vector3.Distance(otherCollider, transform.position) < 1.5f)
             {
                 grabbed = false;
                 deltaAngle = 0f;
@@ -74,4 +75,19 @@ public class SteeringWheelCollider : MonoBehaviour
             otherCollider = Vector3.zero;
         }
     }
+
+#if Unity_Editor
+
+    // Markiert die Breite des Interaktionsbereichs
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+
+        Gizmos.DrawLine(transform.position + Vector3.up, transform.position + Vector3.up * 1.5f);
+        Gizmos.DrawLine(transform.position + Vector3.left, transform.position + Vector3.left * 1.5f);
+        Gizmos.DrawLine(transform.position + Vector3.right, transform.position + Vector3.right * 1.5f);
+        Gizmos.DrawLine(transform.position + Vector3.down, transform.position + Vector3.down  * 1.5f);
+    }
+#endif
+
 }
