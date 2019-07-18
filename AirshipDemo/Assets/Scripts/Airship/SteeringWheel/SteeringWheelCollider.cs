@@ -36,9 +36,18 @@ public class SteeringWheelCollider : MonoBehaviour
             newVector = new Vector3(otherCollider.x - transform.position.x,
             otherCollider.y - transform.position.y, 0f).normalized;
 
-            deltaAngle = Vector3.SignedAngle(oldVector, newVector, Vector3.forward);
+            float previewDeltaAngle = Vector3.SignedAngle(oldVector, newVector, Vector3.forward);
 
-            oldVector = newVector;
+            // Feinabstimmung fuer Steuerrad
+            if (previewDeltaAngle > 6f || previewDeltaAngle < 6f)
+            {
+                deltaAngle = previewDeltaAngle;
+                oldVector = newVector;
+            }
+            else
+            {
+                deltaAngle = 0f;
+            }
         }
     }
 
@@ -48,8 +57,8 @@ public class SteeringWheelCollider : MonoBehaviour
         {
             bool triggerPressed = ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger);
 
-            // Zusaetzliche Einschraenkung des Interaktionsbereichs auf die Hoehe der Griffe des Steuerrads
-            if (!triggerPressed || Vector3.Distance(otherCollider, transform.position) < 1f || Vector3.Distance(otherCollider, transform.position) < 1.5f)
+            // Zusaetzliche Einschraenkung des Interaktionsbereichs auf die Hoehe der Griffe des Steuerrads / Feinabstimmung fuer Steuerrad
+            if (!triggerPressed || Vector3.Distance(otherCollider, transform.position) < 1f || Vector3.Distance(otherCollider, transform.position) > 1.8f)
             {
                 grabbed = false;
                 deltaAngle = 0f;
@@ -76,8 +85,6 @@ public class SteeringWheelCollider : MonoBehaviour
         }
     }
 
-#if Unity_Editor
-
     // Markiert die Breite des Interaktionsbereichs
     private void OnDrawGizmosSelected()
     {
@@ -88,6 +95,5 @@ public class SteeringWheelCollider : MonoBehaviour
         Gizmos.DrawLine(transform.position + Vector3.right, transform.position + Vector3.right * 1.5f);
         Gizmos.DrawLine(transform.position + Vector3.down, transform.position + Vector3.down  * 1.5f);
     }
-#endif
 
 }

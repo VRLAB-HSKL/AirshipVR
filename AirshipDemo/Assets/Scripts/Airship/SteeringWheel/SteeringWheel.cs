@@ -26,7 +26,7 @@ public class SteeringWheel : MonoBehaviour
     {
         float deltaAngle = collider.GetDeltaAngle;
 
-        // Verlangsamt die Rotation des Steuerrads
+        // Verlangsamt die Rotation des Steuerrads / Feinabstimmung fuer Steuerrad
         if (deltaAngle < 10f)
         {
             if (deltaAngle != 0f
@@ -50,8 +50,8 @@ public class SteeringWheel : MonoBehaviour
             }
         }
 
-        // Setzt den Winkel bei Aenderungen ueber dem Limit zurueck
-        if (Mathf.Abs(actualAngle - oldAngle) > 10f)
+        // Setzt den Winkel bei Aenderungen ausserhalb des Limits zurueck / Feinabstimmung fuer Steuerrad
+        if (Mathf.Abs(actualAngle - oldAngle) > 10f || Mathf.Abs(actualAngle - oldAngle) < 2f)
         {
             actualAngle = oldAngle;
         }

@@ -7,14 +7,14 @@ public class Oven : MonoBehaviour
 {
     [SerializeField] AirshipButton button;
 
-    [SerializeField] float maxFuel = 2000;
-    [SerializeField] float fuelValue = 500;
+    [SerializeField] float maxFuel = 2000f;
+    [SerializeField] float fuelValue = 500f;
     [SerializeField]
     [Range(20f, 100f)] float fuelBurnDecay = 20f;
     [SerializeField]
     [Range(0f, 2f)] float fuelDecay = 2f;
 
-    float actualFuel = 2000;
+    float actualFuel = 1500f;
 
     float fuelPercentage;
 
