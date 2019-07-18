@@ -29,17 +29,18 @@ public class SteeringWheelCollider : MonoBehaviour
         oldVector = Vector3.up;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (otherCollider != Vector3.zero && grabbed)
         {
-            newVector = new Vector3(otherCollider.x - transform.position.x,
-            otherCollider.y - transform.position.y, 0f).normalized;
+            newVector = new Vector3(transform.position.x - otherCollider.x,
+            transform.position.y - otherCollider.y, 0f).normalized;
 
+            /*
             float previewDeltaAngle = Vector3.SignedAngle(oldVector, newVector, Vector3.forward);
 
             // Feinabstimmung fuer Steuerrad
-            if (previewDeltaAngle > 6f || previewDeltaAngle < 6f)
+            if (previewDeltaAngle > 1f || previewDeltaAngle < 1f)
             {
                 deltaAngle = previewDeltaAngle;
                 oldVector = newVector;
@@ -47,12 +48,16 @@ public class SteeringWheelCollider : MonoBehaviour
             else
             {
                 deltaAngle = 0f;
-            }
+            }*/
+
+            deltaAngle = Vector3.SignedAngle(oldVector, newVector, Vector3.forward);
+            oldVector = newVector;
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
+        /*
         if (other.GetType() == typeof(SphereCollider))
         {
             bool triggerPressed = ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger);
@@ -72,6 +77,27 @@ public class SteeringWheelCollider : MonoBehaviour
             }
 
             otherCollider = other.transform.position;
+        }*/
+        if (other.GetType() == typeof(SphereCollider))
+        {
+            bool triggerPressed = ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger);
+
+            // Zusaetzliche Einschraenkung des Interaktionsbereichs auf die Hoehe der Griffe des Steuerrads / Feinabstimmung fuer Steuerrad
+            if (!(ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger)))
+            {
+                grabbed = false;
+                deltaAngle = 0f;
+
+            }
+            else if ((ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger) && !grabbed))
+            {
+                grabbed = true;
+
+                oldVector = new Vector3(transform.position.x - otherCollider.x,
+                     transform.position.y - otherCollider.y, 0f).normalized;
+            }
+
+            otherCollider = other.transform.position;
         }
     }
 
@@ -81,7 +107,7 @@ public class SteeringWheelCollider : MonoBehaviour
         {
             grabbed = false;
             deltaAngle = 0f;
-            otherCollider = Vector3.zero;
+            //otherCollider = Vector3.zero;
         }
     }
 
