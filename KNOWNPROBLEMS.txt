@@ -19,11 +19,14 @@ Problem Collider, Fuel und Airship:
 	es vorkommen, dass die Kollision von Fuel (auf dem Airship) mit dem Airship nicht mehr registriert wird. 
 	- Bei zu hoher Geschwindigkeit kann es vorkommen, dass aufgrund der zu geringen Abtastrate der Collider, das Airship in das andere 
 	Objekt eindringt. In diesem Fall wird das Airship aus dem anderen Objekt geschleudert, sobald die Kollision registriert wird.
-	
+	- Nach einer Kollision sorgt die Krafteinwirkung auf den Rigidbody des Airships für eine ständige Positionsänderung. 
+	Durch diese Änderungen kann das Schiff die vorgegebene Höhe überschreiten.	
+
 	Bisherige Lösung:
 	- Die Collision Detection der Rigidbodys kann angepasst werden, war hier jedoch nicht notwendig.
 	- Geschwindigkeit von Umgebung und Airship wurden angepasst.
 	- Fuel wird in Intervallen im Airship neu plaziert.
+	- Es werden jedes Update alle einwirkenden Kräfte auf den Rigidbody des Schiffs entfernt.
 
 Problem Asynchrones Laden:
 	- Nach dem Auswählen einer Szene wird dieses im Hintergrund geladen und danach aufgerufen, dabei werden die Texturen der prozedual generierten Welt nicht geladen.
