@@ -34,8 +34,18 @@ public class Airship : MonoBehaviour
     bool lift = false;
     bool fall = false;
 
+    Rigidbody rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();  
+    }
+
     void Update()
     {
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
         steer = steeringWheel.GetSteeringValue;
 
         if (!steer.Equals(0))

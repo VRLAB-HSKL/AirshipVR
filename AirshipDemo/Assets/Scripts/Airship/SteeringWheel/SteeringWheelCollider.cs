@@ -47,7 +47,7 @@ public class SteeringWheelCollider : MonoBehaviour
             bool triggerPressed = ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger);
 
             // Zusaetzliche Einschraenkung des Interaktionsbereichs auf die Hoehe der Griffe des Steuerrads / Feinabstimmung fuer Steuerrad
-            if (!triggerPressed || Vector3.Distance(otherCollider, transform.position) < 1f || Vector3.Distance(otherCollider, transform.position) > 1.8f)
+            if (!triggerPressed || Vector3.Distance(otherCollider, transform.position) < .9f || Vector3.Distance(otherCollider, transform.position) > 1.9f)
             {
                 grabbed = false;
                 deltaAngle = 0f;
