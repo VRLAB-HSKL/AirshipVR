@@ -19,14 +19,12 @@ public class Airship : MonoBehaviour
     [SerializeField]
     [Range(.04f, .1f)] float oscillationTime = .04f;
 
-    // Grenzen fuer die Auf- und Ab-Bewegung des Airships: eventRange = 20f -> 40f Bewegungsbereich
-    [SerializeField] float eventRange = 20f;
-    [SerializeField] float flightHeight = 50f;
+    [SerializeField] float maxHeight = 80f;
 
     [SerializeField]
-    [Range(0f, 2f)] float speedForward = 1f;
+    [Range(0f, 5f)] float speedForward = 3f;
     [SerializeField]
-    [Range(1f, 2f)] float speedVertical = 1f;
+    [Range(1f, 5f)] float speedVertical = 3f;
 
     [SerializeField]
     [Range(0f, .1f)] float rotationSpeed = .1f;
@@ -63,13 +61,13 @@ public class Airship : MonoBehaviour
             if (lift)
             {
                 transform.position += new Vector3(0f, speedVertical * Time.deltaTime, 0f);
-                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight - eventRange - (transform.position.y - ship.transform.position.y), flightHeight + eventRange), transform.position.z);
+                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, 1f, maxHeight), transform.position.z);
                 fall = false;
             }
             if (fall)
             {
                 transform.position -= new Vector3(0f, speedVertical * Time.deltaTime, 0f);
-                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, flightHeight - eventRange - (transform.position.y - ship.transform.position.y), flightHeight + eventRange), transform.position.z);
+                transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, 1f, maxHeight), transform.position.z);
 
                 lift = false;
             }
