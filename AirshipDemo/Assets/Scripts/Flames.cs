@@ -8,7 +8,8 @@ public class Flames : MonoBehaviour
 {
     [SerializeField]
     AirshipButtonCollider button_up;
-
+    [SerializeField]
+    Oven OvenScript;
     [SerializeField]
     bool risingup = false;
     private ParticleSystem flames;
@@ -28,11 +29,14 @@ public class Flames : MonoBehaviour
     {
         risingup = button_up.IsPressed;
 
-        if (risingup)
+        if (risingup && !OvenScript.NoFuel)
         {
             flames.Play();
         }
-        else
+        else if (risingup && OvenScript.NoFuel)
+        {
+            flames.Stop();
+        }else
         {
             flames.Stop();
         }

@@ -9,7 +9,7 @@ public class LoadSceneAsync : MonoBehaviour
     [SerializeField]
     private Image radialBar;//Radialbar zum Anzeigen des Ladefortschritts.
 
-    private AsyncOperation asyncLoad;//AsyncOperation zum späteren Laden der entsprechenden Szenen.
+    //private AsyncOperation asyncLoad;//AsyncOperation zum späteren Laden der entsprechenden Szenen.
 
 
     [SerializeField]
@@ -46,7 +46,7 @@ public class LoadSceneAsync : MonoBehaviour
             mTrueOrFalse.Play();
             sceneToLoad = other.gameObject.name;
             loadingLabel.text = "Loading " + other.gameObject.name + " Scenario";
-            StartCoroutine(LoadAsyncScence());
+            StartCoroutine(LoadScence());
         }
         else if(other.gameObject.tag == "SceneGlobe" && IsLoading)//Es handelt sich bei dem GameObject um eine Schneekugel, doch es wurde schon eine Szene geladen. Deswegen wird nichts ausgeführt!
         {
@@ -79,18 +79,12 @@ public class LoadSceneAsync : MonoBehaviour
 
     /// <summary>
     /// Enumerator zum Laden der zuvor in OnTriggerEnter festgelegten Szene. Hierbei wird kontinuierlich die Radial Progressbar, die sich auf dem "Table" Mesh befindet
-    /// aktualisiert. Die Werte basieren dabei auf dem Fortschritt des asynchronen Ladens.
-    /// </summary>
+    /// aktualisiert. Die Werte basiAsyncdabei auf dem FortsasyncOperatioSceneManager.dens.
+    ///</summary>
     /// <returns></returns>    
-    IEnumerator LoadAsyncScence()
+    IEnumerator LoadScence()
     {
-        asyncLoad = SceneManager.LoadSceneAsync(this.sceneToLoad);
-      
-        //Solange die Szene lädt wird die RadialBar entsprechend gefüllt.
-        while (!asyncLoad.isDone)
-        {
-            radialBar.fillAmount = Mathf.Clamp01(asyncLoad.progress / 0.9f);
-            yield return null;
-        }
+        SceneManager.LoadScene(this.sceneToLoad);
+        yield return null;
     }
 }
