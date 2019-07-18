@@ -56,11 +56,7 @@ public class SteeringWheelCollider : MonoBehaviour
             else if ((ViveInput.GetPress(HandRole.RightHand, ControllerButton.Trigger) ^ ViveInput.GetPress(HandRole.LeftHand, ControllerButton.Trigger) && !grabbed))
             {
                 grabbed = true;
-
-                //transform.TransformVector
-                //transform.InverseTransformPoint
                 
-
                 oldVector = new Vector3(transform.position.x - otherCollider.x,
                      transform.position.y - otherCollider.y, 0f).normalized;
             }
@@ -75,7 +71,7 @@ public class SteeringWheelCollider : MonoBehaviour
         {
             grabbed = false;
             deltaAngle = 0f;
-            //otherCollider = Vector3.zero;
+            otherCollider = Vector3.zero;
         }
     }
 

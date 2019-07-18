@@ -2,7 +2,7 @@ ACHTUNG: Das Projekt ist an die räumlichen Gegebenheiten des VRLabors der Hochsc
 Die Größe des Lusftschiffs wurde auf die des verwendeten Raumes skaliert (ca. 5m Raumdiagonale). 
 
 
-Dem Projekt ist die Datei KNOWNPROBLEMS.txt begefügt. Diese beschreibt aufgetretene Problem und entsprechende Lösungsansätze.
+Dem Projekt ist die Datei KNOWNPROBLEMS.txt begefügt. Diese beschreibt aufgetretene Problem und entsprechende Lösungsansätze oder bisherige Lösungen.
 
 
 
