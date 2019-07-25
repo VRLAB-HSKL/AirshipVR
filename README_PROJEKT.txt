@@ -5,6 +5,24 @@ Die Größe des Lusftschiffs wurde auf die des verwendeten Raumes skaliert (ca. 5m
 Dem Projekt ist die Datei KNOWNPROBLEMS.txt begefügt. Diese beschreibt aufgetretene Problem und entsprechende Lösungsansätze oder bisherige Lösungen.
 
 
+Was würde im Nachhinein anders angegangen:
+	- Eigene Physik implementieren
+	- Projekt früher mit der entsprechenden Hardware testen, den Simulator nur bedingt verwenden.
+
+Ausblick:
+	- Flugmechanik: 
+		- Geschwindigkeiten interpolieren
+		- Wind- und Strömungswirkung auf das Airship
+		- Masse simulieren
+		- Veränderbare Geschwindigkeiten 
+	- Sound
+	- Bedienmöglichkeiten:
+		- Weitere Funktionen des Wands nutzen (beispielsweise das Touchpad, um an einem Ventil zu drehen)
+		- Oder, vollständig auf Controller verzichten -> Tracker und reale Objekte zum steuern verwenden
+	- Weltgenerierung anpassen:
+		- Objekte generieren (Bäume, Felsen, etc.)
+	- Tag- Nachtzyklus
+	- Nutzer kann das Airship verlassen / Inseln etc. betreten
 
 Externe Ressourcen:
 

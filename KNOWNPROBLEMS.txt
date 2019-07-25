@@ -21,7 +21,11 @@ Problem Collider, Fuel und Airship:
 	Objekt eindringt. In diesem Fall wird das Airship aus dem anderen Objekt geschleudert, sobald die Kollision registriert wird.
 	- Nach einer Kollision sorgt die Krafteinwirkung auf den Rigidbody des Airships für eine ständige Positionsänderung. 
 	Durch diese Änderungen kann das Schiff die vorgegebene Höhe überschreiten.	
-
+	
+	- Das Airship wurde mit einem Rigidbody ausgestattet, wodurch alle Collider beeinflusst werden, die sich an einem Child-Objekt befinden. Kollisionen 
+	mit Triggern werden dann nicht mehr registriert. Um dies zu beheben, müssen alle Collider, die als Trigger fungieren sollen, mit einem Rigidbody ausgestattet werden.
+	Weiterhin müssen die Eigenschaften "UseGravity" ausgeschalten und "IsKinematic" angeschalten werden. 
+	
 	Bisherige Lösung:
 	- Die Collision Detection der Rigidbodys kann angepasst werden, war hier jedoch nicht notwendig.
 	- Geschwindigkeit von Umgebung und Airship wurden angepasst.
