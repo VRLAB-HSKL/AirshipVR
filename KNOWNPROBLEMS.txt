@@ -38,15 +38,15 @@ Problem Asynchrones Laden:
 	Bisherige Lösung:
 	- Anstelle von SceneManager.LoadSceneAsync() wurde SceneManager.LoadScene() benutzt. Der kreisförmige Fortschrittsbalken wird also im Moment nicht genutzt, des Weiteren
 	kann der Benutzter sich während dem Laden der Szene nicht in der "Start" Szene bewegen.
+
 Problem Partikelsystem:
 	- Das Partikelsystem welches durch den Knopf zum Aufsteigen (befindet sich rechts an dem Armaturenbrett) ausgelöst werden soll, wird teilweise nicht gestartet. Zu
 	diesem Problem gab es bisher keine Lösungen.
-	Ein Lösungsansatz wäre das Hinzufügen eines Sphere Colliders anstelle eines Mesh Colliders an das Knopf Objekt. Da ein Mesh Collider Probleme mit der Abtastrate
-	haben könnte.
+
 Problem 3D-Modelle von Blender:
-	- Alle Modelle in der frei zugänglichen Software "Blender" modelliert wurden, mussten ihr Parenting in Unity selbst erhalten. Wurde das Parenting von Blender übernommen,
-	war nicht nur die Skalierung des Modells falsch, sondern auch die einzelnen Rotationen, die durchgeführt werden sollten.
+	- Alle Modelle wurden in Blender erstellt. Blender benutzt aber im Gegensatz zu Unity ein rechtshändiges Koordinatensystem. Deswegen gab es beim Importieren der
+	.fbx Dateien Probleme. Teilweise wurden die Modelle um -90 Grad auf der X-Achse gedreht. Auch das Parenting in Blender führte zu Problemen bei der Rotation.
 
 	Bisherige Lösung:
-	- Alle statischen Elemente des Luftschiffs oder der Inseln wurden in Blender mit einander verbunden und einzelne bewegliche Elemente wurden als separate .fbx Dateien
+	- Alle statischen Elemente der entsprechenden Modelle wurden in Blender mit einander vereint und einzelne bewegliche Elemente wurden als separate .fbx Dateien
 	dem Projekt hinzugefügt. Das entsprechende Parenting wurde in Unity selbst ausgeführt um Rotationsprobleme zu verhindern.

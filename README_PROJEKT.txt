@@ -15,9 +15,17 @@ Ausblick:
 		- Wind- und Strömungswirkung auf das Airship
 		- Masse simulieren
 		- Veränderbare Geschwindigkeiten 
+	- Model des Luftschiffs anpassen
+		- Anstelle eines Korbes komplett auf eine Zeppelin Struktur umsteigen.
+	- Treibstoff
+		- Kein Kohleofen mehr, sondern Gas als Treibstoff 
 	- Sound
 	- Bedienmöglichkeiten:
 		- Weitere Funktionen des Wands nutzen (beispielsweise das Touchpad, um an einem Ventil zu drehen)
+		- Allgemein mehr physikalische Interaktionen
+			- Anstelle der Knöpfe Seile zum Ziehen
+			- Hebel zum Bestimmen der Geschwindigkeit des Luftschiffs
+			- etc.
 		- Oder, vollständig auf Controller verzichten -> Tracker und reale Objekte zum steuern verwenden
 	- Weltgenerierung anpassen:
 		- Objekte generieren (Bäume, Felsen, etc.)
