@@ -44,7 +44,7 @@ Problem Partikelsystem:
 	diesem Problem gab es bisher keine Lösungen.
 
 Problem 3D-Modelle von Blender:
-	- Alle Modelle wurden in Blender erstellt. Blender benutzt aber im Gegensatz zu Unity ein rechtshändiges Koordinatensystem. Deswegen gab es beim Importieren der
+	- Alle Modelle wurden in Blender erstellt. Blender benutzt im Gegensatz zu Unity ein rechtshändiges Koordinatensystem. Deswegen gab es beim Importieren der
 	.fbx Dateien Probleme. Teilweise wurden die Modelle um -90 Grad auf der X-Achse gedreht. Auch das Parenting in Blender führte zu Problemen bei der Rotation.
 
 	Bisherige Lösung:
