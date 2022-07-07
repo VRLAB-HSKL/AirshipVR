@@ -800,16 +800,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8928386717845106140, guid: 3a497826d2c9e7a4c93f6137f3f8a519,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8928386717845106140, guid: 3a497826d2c9e7a4c93f6137f3f8a519,
-        type: 3}
-      propertyPath: EmissionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4774754147041399980, guid: 3a497826d2c9e7a4c93f6137f3f8a519, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a497826d2c9e7a4c93f6137f3f8a519, type: 3}

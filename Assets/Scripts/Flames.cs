@@ -13,7 +13,6 @@ public class Flames : MonoBehaviour
     [SerializeField]
     bool risingup = false;
     private ParticleSystem flames;
-    private ParticleSystem.EmissionModule _emission;
     public bool IsRisingUp
     {
         get
@@ -21,12 +20,9 @@ public class Flames : MonoBehaviour
             return risingup;
         }
     }
-    private void Awake()
+    private void Start()
     {
-
         flames = this.gameObject.GetComponent<ParticleSystem>();
-        _emission = flames.emission;
-        _emission.enabled = false;
     }
     // Update is called once per frame
     void Update()
@@ -35,15 +31,14 @@ public class Flames : MonoBehaviour
 
         if (risingup && !OvenScript.NoFuel)
         {
-            _emission.enabled = true;
+            flames.Play();
         }
         else if (risingup && OvenScript.NoFuel)
         {
-            _emission.enabled = false;
-        }
-        else
+            flames.Stop();
+        }else
         {
-            _emission.enabled = false;
+            flames.Stop();
         }
     }
 }

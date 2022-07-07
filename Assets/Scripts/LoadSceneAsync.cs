@@ -14,8 +14,7 @@ public class LoadSceneAsync : MonoBehaviour
 
     [SerializeField]
     private ParticleSystem mTrueOrFalse;//Partikelsystem, damit der Benutzer mitbekommt, ob dieser das richtige Objekt hinzugefügt hat.
-
-    private ParticleSystem.EmissionModule _emission;
+    
     [SerializeField]
     private TextMeshProUGUI loadingLabel;//Label unterhalb der X-Stelle.
 
@@ -24,12 +23,6 @@ public class LoadSceneAsync : MonoBehaviour
     private bool isLoading = false;//Gibt an, ob im Moment eine Szene geladen wird.
 
     public bool IsLoading { get => isLoading; set => isLoading = value; }
-
-    private void Awake()
-    {
-        _emission = mTrueOrFalse.emission;
-        _emission.enabled = false;
-    }
 
     private void Start()
     {
@@ -49,9 +42,8 @@ public class LoadSceneAsync : MonoBehaviour
         if(other.gameObject.tag == "SceneGlobe" && !IsLoading)//Es handelt sich bei dem GameObject um eine Schneekugel samt kleinem Modell. Außerdem wurde das Laden einer Szene noch nicht gestartet.
         {
             IsLoading = true;
-
             mTrueOrFalse.startColor = Color.green;
-            _emission.enabled = true;
+            mTrueOrFalse.Play();
             sceneToLoad = other.gameObject.name;
             loadingLabel.text = "Loading " + other.gameObject.name + " Scenario";
             StartCoroutine(LoadScence());
@@ -63,7 +55,7 @@ public class LoadSceneAsync : MonoBehaviour
         else//Es handelt sich um keine Schneekugel, dem Benutzer wird das durch ein rotes Partikelsystem und durch das Ändern des Labels dargestellt.
         {
             mTrueOrFalse.startColor = Color.red;
-            _emission.enabled = true;
+            mTrueOrFalse.Play();
             loadingLabel.text = "Only a globe will work!";
             
         }
